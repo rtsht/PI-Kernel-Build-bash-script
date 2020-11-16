@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# A script to fetch the latest linux kernel for the Raspberry Pi4
+# and compile a kernel image based on a pre-configured config
+# file. This config removes camera and video4linux support and 
+# also appends my student number to the version number.
+
+# variables set for executables
+GIT=/usr/bin/git
+COPY=/bin/cp
+SUDO=/usr/bin/sudo
+MAKE=/usr/bin/make
+SHUTDOWN=/sbin/shutdown
+
+# variables set for files
+KERNEL=kernel7l
+
+# Retreive the repo with the config file 
+$GIT clone --depth=1 git@github.com:s3791004/usap-a2-kernel.git
+
+# Retreive the repo with the official Linux kernel
+$GIT clone --depth=1 https://github.com/raspberrypi/linux
+
+# Copy the config into the linux directory
+$COPY usap-a2-kernel/.config linux/.config 
+
+# Change into linux dir
+cd linux || exit 1
+
+# Compile the kernel based on the config file
+$MAKE -j4 zImage modules dtbs
+
+# Install the modules and copy the compiled files to the boot dir
+$SUDO $MAKE modules_install
+$SUDO $COPY arch/arm/boot/dts/*.dtb /boot/
+$SUDO $COPY arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
+$SUDO $COPY arch/arm/boot/dts/overlays/README /boot/overlays/
+$SUDO $COPY arch/arm/boot/zImage /boot/$KERNEL.img
+
+$SUDO $SHUTDOWN -r now
