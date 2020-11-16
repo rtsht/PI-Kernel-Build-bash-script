@@ -10,16 +10,23 @@ GIT=/usr/bin/git
 COPY=/bin/cp
 SUDO=/usr/bin/sudo
 MAKE=/usr/bin/make
+YES=/usr/bin/yes
 SHUTDOWN=/sbin/shutdown
 
 # variables set for files
 KERNEL=kernel7l
 
+# Function to exit in case a step fails
+fail-stop() {
+	echo Exited because "$1"
+	exit 1
+}
+
 # Retreive the repo with the config file 
-$GIT clone --depth=1 git@github.com:s3791004/usap-a2-kernel.git
+$GIT clone --depth=1 git@github.com:s3791004/usap-a2-kernel.git || fail-stop "Git clone failed"
 
 # Retreive the repo with the official Linux kernel
-$GIT clone --depth=1 https://github.com/raspberrypi/linux
+$GIT clone --depth=1 https://github.com/raspberrypi/linux || fail-stop "Git clone failed"
 
 # Copy the config into the linux directory
 $COPY usap-a2-kernel/.config linux/.config 
@@ -28,7 +35,7 @@ $COPY usap-a2-kernel/.config linux/.config
 cd linux || exit 1
 
 # Compile the kernel based on the config file
-$MAKE -j4 zImage modules dtbs
+$YES | $MAKE -j4 zImage modules dtbs
 
 # Install the modules and copy the compiled files to the boot dir
 $SUDO $MAKE modules_install
