@@ -9,6 +9,7 @@
 GIT=/usr/bin/git
 COPY=/bin/cp
 SUDO=/usr/bin/sudo
+APT=/usr/bin/apt
 MAKE=/usr/bin/make
 YES=/usr/bin/yes
 SHUTDOWN=/sbin/shutdown
@@ -33,6 +34,12 @@ $COPY usap-a2-kernel/.config linux/.config
 
 # Change into linux dir
 cd linux || exit 1
+
+# Install required packages
+$YES | $SUDO $APT install raspberrypi-kernel-headers build-essential bc git wget bison flex libssl-dev make
+
+# Generate a default kernel config
+$MAKE bcm2711_defconfig
 
 # Compile the kernel based on the config file
 $YES | $MAKE -j4 zImage modules dtbs
