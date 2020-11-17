@@ -5,7 +5,7 @@ TOP=/usr/bin/top
 AWK=/usr/bin/awk
 
 while true ; do
-	$TOP -n 1 -b |  $AWK '/%Cpu/ {print ((100 - $8)), (($2 + $4 + $6)) }'
+	$TOP -n 1 -b | $AWK '/Cpu/ { print 100 - $8 }'
 	sleep 1
 done
 
