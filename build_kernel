@@ -39,7 +39,7 @@ $YES | $SUDO $APT install raspberrypi-kernel-headers build-essential bc git wget
 $MAKE bcm2711_defconfig
 
 # Copy the pre-made config into the linux directory
-$COPY usap-a2-kernel/.config linux/.config 
+$COPY ../usap-a2-kernel/.config .config 
 
 # Compile the kernel based on the config file
 $YES | $MAKE -j4 zImage modules dtbs
