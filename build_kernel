@@ -44,6 +44,13 @@ $COPY usap-a2-kernel/.config linux/.config
 # Compile the kernel based on the config file
 $YES | $MAKE -j4 zImage modules dtbs
 
+# Back up the existing kernel and libs
+$SUDO mkdir -p /boot/bkup/overlays
+$SUDO $COPY /boot/*.dtb /boot/bkup/
+$SUDO $COPY /boot/overlays/*.dtb* /boot/bkup/overlays/
+$SUDO $COPY /boot/overlays/README /boot/bkup/overlays/
+$SUDO $COPY /boot/$KERNEL.img /boot/bkup/
+
 # Install the modules and copy the compiled files to the boot dir
 $SUDO $MAKE modules_install
 $SUDO $COPY arch/arm/boot/dts/*.dtb /boot/
