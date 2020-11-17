@@ -59,3 +59,4 @@ $SUDO $COPY arch/arm/boot/dts/overlays/README /boot/overlays/
 $SUDO $COPY arch/arm/boot/zImage /boot/$KERNEL.img
 
 $SUDO $SHUTDOWN -r now
+
