@@ -29,9 +29,6 @@ $GIT clone --depth=1 git@github.com:s3791004/usap-a2-kernel.git || fail-stop "Gi
 # Retreive the repo with the official Linux kernel
 $GIT clone --depth=1 https://github.com/raspberrypi/linux || fail-stop "Git clone failed"
 
-# Copy the config into the linux directory
-$COPY usap-a2-kernel/.config linux/.config 
-
 # Change into linux dir
 cd linux || exit 1
 
@@ -40,6 +37,9 @@ $YES | $SUDO $APT install raspberrypi-kernel-headers build-essential bc git wget
 
 # Generate a default kernel config
 $MAKE bcm2711_defconfig
+
+# Copy the pre-made config into the linux directory
+$COPY usap-a2-kernel/.config linux/.config 
 
 # Compile the kernel based on the config file
 $YES | $MAKE -j4 zImage modules dtbs
