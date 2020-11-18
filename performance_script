@@ -1,11 +1,62 @@
 #!/bin/bash
+#shellcheck disable=SC2016
+# set -x
+# Trap to catch a USR2 signal
+trap clean_exit SIGUSR2
 
 # Variables set for executables
 TOP=/usr/bin/top
 AWK=/usr/bin/awk
+SUDO=/usr/bin/sudo
+CHMOD=/bin/chmod
+STAT=/usr/bin/stat
+LED=/sys/class/leds/led0/
 
-while true ; do
-	$TOP -n 1 -b | $AWK '/Cpu/ { print 100 - $8 }'
-	sleep 1
+# Handling of USR2 signal to gracefully exit
+clean_exit() {
+  $SUDO $CHMOD "$OG_LED_BRT" ${LED}brightness
+  echo Ending loop and exiting nicely...!
+run=false
+}
+
+# Function to get cpu load per second
+time_on() {
+  if (( $(echo "$1 < 20" | bc -l) )) ; then
+    ON=0.2
+    OFF=0.8
+  elif (( $(echo "$1 < 40" | bc -l) )) ; then
+    ON=0.4
+    OFF=0.6
+  elif (( $(echo "$1 < 60" | bc -l) )) ; then
+    ON=0.6
+    OFF=0.4
+  elif (( $(echo "$1 < 80" | bc -l) )) ; then
+    ON=0.8
+    OFF=0.2
+  else
+    ON=1
+    OFF=0
+  fi
+}
+
+# Save existing permissions
+# OG_LED_TRIG=$($STAT -c '%a' /sys/class/leds/led0/trigger)
+OG_LED_BRT=$($STAT -c '%a' /sys/class/leds/led0/brightness)
+
+# Change permissions
+$SUDO $CHMOD o+w ${LED}brightness
+
+run=true
+while $run ; do
+	LOAD=$($TOP -n 1 -b | $AWK '/Cpu/ { print 100 - $8 }')
+#	echo load is "$LOAD"
+	time_on "$LOAD"
+#	echo on is "$ON"
+#	echo off is "$OFF"
+	echo 1 >${LED}brightness
+	sleep $ON
+	echo 0 >${LED}brightness
+	sleep $OFF
+#	echo ------------------------
 done
 
