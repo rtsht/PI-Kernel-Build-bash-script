@@ -1,6 +1,6 @@
 #!/bin/bash
 #shellcheck disable=SC2016
-# set -x
+
 # Trap to catch a USR2 signal
 trap clean_exit SIGUSR2
 
@@ -14,8 +14,6 @@ LED=/sys/class/leds/led0/
 
 # Handling of USR2 signal to gracefully exit
 clean_exit() {
-  $SUDO $CHMOD "$OG_LED_BRT" ${LED}brightness
-  echo Ending loop and exiting nicely...!
 run=false
 }
 
@@ -39,24 +37,19 @@ time_on() {
   fi
 }
 
-# Save existing permissions
-# OG_LED_TRIG=$($STAT -c '%a' /sys/class/leds/led0/trigger)
+# Save existing permissions then allow writing
 OG_LED_BRT=$($STAT -c '%a' /sys/class/leds/led0/brightness)
-
-# Change permissions
 $SUDO $CHMOD o+w ${LED}brightness
 
 run=true
 while $run ; do
-	LOAD=$($TOP -n 1 -b | $AWK '/Cpu/ { print 100 - $8 }')
-#	echo load is "$LOAD"
-	time_on "$LOAD"
-#	echo on is "$ON"
-#	echo off is "$OFF"
+	time_on "$($TOP -n 1 -b | $AWK '/Cpu/ { print 100 - $8 }')"
 	echo 1 >${LED}brightness
 	sleep $ON
 	echo 0 >${LED}brightness
 	sleep $OFF
-#	echo ------------------------
 done
 
+# Restore existing permission
+$SUDO $CHMOD "$OG_LED_BRT" ${LED}brightness
+echo Ending loop and exiting nicely...!
