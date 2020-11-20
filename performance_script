@@ -1,7 +1,7 @@
 #!/bin/bash
 #shellcheck disable=SC2016
 
-# Trap to catch a USR2 signal
+# Trap to catch a USR2 signal and commence exit procedure
 trap clean_exit SIGUSR2
 
 # Variables set for executables
@@ -11,6 +11,7 @@ SUDO=/usr/bin/sudo
 CHMOD=/bin/chmod
 STAT=/usr/bin/stat
 LED=/sys/class/leds/led0/
+GREP=/bin/grep
 
 # Handling of USR2 signal to gracefully exit
 clean_exit() {
@@ -44,7 +45,7 @@ $SUDO $CHMOD o+w ${LED}brightness
 $SUDO $CHMOD o+w ${LED}trigger
 
 # Save existing trigger type then change to none
-OLD_TRIGGER=$( grep -o '\[.*]' < ${LED}trigger)
+OLD_TRIGGER=$( $GREP -o '\[.*]' < ${LED}trigger)
 echo none >${LED}trigger
 
 # Main loop to blink per cpu load
