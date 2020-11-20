@@ -8,18 +8,15 @@ Project by Andrew Waltos for whilst studying at RMIT. Student Number s3791004.
 
 ### Contents:
 [build_kernel](/build_kernel)
-
 A script to compile pull the latest linux kernel for raspberry pi and compile it based on a custom config which excludes camera and v4l support from the build and append my student number to the version.
 
 [performance_script](/performance_script)
-
 A script that blinks the green led on the pi respective to CPU load.
 
 [readme.md](/readme.md)  
 This file - a description of the project.
 
 [git_log](/git_log)
-
 An exported log of Git commits over the development of this project
 
 ### Resources used:
