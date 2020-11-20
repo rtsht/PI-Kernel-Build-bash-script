@@ -37,10 +37,17 @@ time_on() {
   fi
 }
 
-# Save existing permissions then allow writing
-OG_LED_BRT=$($STAT -c '%a' /sys/class/leds/led0/brightness)
+# Save existing permissions then allow writing by 'other'
+OG_LED_BRT=$($STAT -c '%a' ${LED}brightness)
+OG_LED_TRIG=$($STAT -c '%a' ${LED}trigger)
 $SUDO $CHMOD o+w ${LED}brightness
+$SUDO $CHMOD o+w ${LED}trigger
 
+# Save existing trigger type then change to none
+OLD_TRIGGER=$( grep -o '\[.*]' < ${LED}trigger)
+echo none >${LED}trigger
+
+# Main loop to blink per cpu load
 run=true
 while $run ; do
 	time_on "$($TOP -n 1 -b | $AWK '/Cpu/ { print 100 - $8 }')"
@@ -50,6 +57,8 @@ while $run ; do
 	sleep $OFF
 done
 
-# Restore existing permission
+# Restore existing file state and permission
+echo "${OLD_TRIGGER:1:-1}" >${LED}trigger
+$SUDO $CHMOD "$OG_LED_TRIG" ${LED}trigger
 $SUDO $CHMOD "$OG_LED_BRT" ${LED}brightness
 echo Ending loop and exiting nicely...!
