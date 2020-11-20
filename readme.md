@@ -7,7 +7,6 @@ This is an assignment to to showcase scripting in Linux using bash and other Lin
 Project by Andrew Waltos for whilst studying at RMIT. Student Number s3791004.
 
 ### Contents:
-
 [build_kernel](/build_kernel)
 
 A script to compile pull the latest linux kernel for raspberry pi and compile it based on a custom config which excludes camera and v4l support from the build and append my student number to the version.
@@ -23,4 +22,6 @@ This file - a description of the project.
 
 An exported log of Git commits over the development of this project
 
+### Resources used:
+All code and docs written on a Raspberry Pi 4 using bash and markdown. Utilities used: [git](https://www.git-scm.com) and [GitHub](https://www.github.com), [shellcheck](https://www.shellcheck.net/), [Linux Kernel](https"//kernel.org), [xconfig](https://en.wikipedia.org/wiki/Xconfig) and various built-ins and packages bundled with [Raspberry Pi OS](https://www.raspberrypi.org/software/).
 
