@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>python-s3791004</Title>
+    <LastModified>2020-11-22 05:24:26</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 3 testing with a BCM2711 and V3D 4.2 on Raspbian 10 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>ARMv7 rev 3</Identifier>
+    <Hardware>Processor: ARMv7 rev 3 @ 1.50GHz (4 Cores), Motherboard: BCM2711, Memory: 855MB, Disk: 16GB SC16G, Graphics: V3D 4.2</Hardware>
+    <Software>OS: Raspbian 10, Kernel: 5.4.75-v7l-s3791004+ (armv7l), Desktop: LXDE 0.10.0, Display Server: X Server plymouth.ignore-serial-consoles, Display Driver: modesetting 1.20.4, OpenGL: 2.1 Mesa 19.3.2, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>s37</User>
+    <TimeStamp>2020-11-22 05:24:26</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes>Python 2.7.16.</Notes>
+    <JSON>{"compiler-configuration":"--build=arm-linux-gnueabihf --disable-libitm --disable-libquadmath --disable-libquadmath-support --disable-sjlj-exceptions --disable-werror --enable-bootstrap --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=arm-linux-gnueabihf --program-prefix=arm-linux-gnueabihf- --target=arm-linux-gnueabihf --with-arch=armv6 --with-default-libstdcxx-abi=new --with-float=hard --with-fpu=vfp --with-gcc-major-version-only --with-target-system-zlib -v","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/numpy-1.2.1</Identifier>
+    <Title>Numpy Benchmark</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Phoronix Test Suite v5.2.1</Description>
+    <Scale>Score</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>30.60</Value>
+        <RawString>28.82:31.5:31.47</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pybench-1.1.3</Identifier>
+    <Title>PyBench</Title>
+    <AppVersion>2018-02-16</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total For Average Test Times</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>5261</Value>
+        <RawString>5304:5198:5281</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>go</Arguments>
+    <Description>Benchmark: go</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>1.37</Value>
+        <RawString>1.37:1.37:1.37</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>2to3</Arguments>
+    <Description>Benchmark: 2to3</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>1.79</Value>
+        <RawString>1.79:1.79:1.79</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>chaos</Arguments>
+    <Description>Benchmark: chaos</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>638</Value>
+        <RawString>640:636:637</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>float</Arguments>
+    <Description>Benchmark: float</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>595</Value>
+        <RawString>594:595:596</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>nbody</Arguments>
+    <Description>Benchmark: nbody</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>599</Value>
+        <RawString>599:602:597</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>pathlib</Arguments>
+    <Description>Benchmark: pathlib</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>146</Value>
+        <RawString>145:145:148</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>raytrace</Arguments>
+    <Description>Benchmark: raytrace</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>2.78</Value>
+        <RawString>2.79:2.78:2.77</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>json_loads</Arguments>
+    <Description>Benchmark: json_loads</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>142</Value>
+        <RawString>142:142:142</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>crypto_pyaes</Arguments>
+    <Description>Benchmark: crypto_pyaes</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>575</Value>
+        <RawString>574:577:575</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>regex_compile</Arguments>
+    <Description>Benchmark: regex_compile</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>982</Value>
+        <RawString>986:980:980</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>python_startup</Arguments>
+    <Description>Benchmark: python_startup</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>43.87</Value>
+        <RawString>44.3:43.7:43.6</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>django_template</Arguments>
+    <Description>Benchmark: django_template</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>367</Value>
+        <RawString>367:367:367</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/pyperformance-1.0.2</Identifier>
+    <Title>PyPerformance</Title>
+    <AppVersion>1.0.0</AppVersion>
+    <Arguments>pickle_pure_python</Arguments>
+    <Description>Benchmark: pickle_pure_python</Description>
+    <Scale>Milliseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>2.84</Value>
+        <RawString>2.83:2.84:2.84</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/numenta-nab-1.1.0</Identifier>
+    <Title>Numenta Anomaly Benchmark</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments>-d windowedGaussian</Arguments>
+    <Description>Detector: Windowed Gaussian</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>174.70</Value>
+        <RawString>177.63342189789:173.98038911819:172.49919104576</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/numenta-nab-1.1.0</Identifier>
+    <Title>Numenta Anomaly Benchmark</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments>-d earthgeckoSkyline</Arguments>
+    <Description>Detector: Earthgecko Skyline</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>ARMv7 rev 3</Identifier>
+        <Value>2166.82</Value>
+        <RawString>2163.4346189499:2158.7667911053:2178.2657780647</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

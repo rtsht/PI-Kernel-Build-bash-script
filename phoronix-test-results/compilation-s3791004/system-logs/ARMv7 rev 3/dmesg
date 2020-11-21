@@ -1,0 +1,1430 @@
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    41858    11712   356352     3444             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     4895      110    61440       82             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       36    98304      302             0 lxsession
+[   1016]  1001  1016     1656       77    45056       66             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      183   139264     4115             0 fcitx
+[   1108]  1001  1108     1635       41    36864       52             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      195             0 gvfsd-fuse
+[   1130]  1001  1130    16292      268   106496      555             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      524   208896     1403             0 lxpanel
+[   1137]  1001  1137    24443      804   155648      970             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       29   102400      355             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      131    81920      411             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      162    81920      266             0 vncserverui
+[   1360]  1001  1360    43018     1047   299008     2721             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      123    36864      262             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821       73    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    16748     1079   102400      985             0 php
+[  19553]  1001 19553     1919      126    45056        0             0 performance_scr
+[  31993]  1001 31993      486       14    28672        0             0 sh
+[  31994]  1001 31994      485       14    32768        0             0 build-gcc
+[  31995]  1001 31995      923      487    32768        0             0 make
+[  32010]  1001 32010      768      126    32768        0             0 bash
+[  32023]  1001 32023      927      458    28672        0             0 make
+[  32028]  1001 32028      802      131    24576        0             0 bash
+[  32097]  1001 32097      953      525    32768        0             0 make
+[  11999]  1001 11999      803      157    28672        0             0 bash
+[  12023]  1001 12023     2912     2427    49152        0             0 make
+[  23030]  1001 23030      876       21    32768        0             0 g++
+[  23032]  1001 23032      876       21    32768        0             0 g++
+[  23033]  1001 23033      720       22    28672        0             0 collect2
+[  23034]  1001 23034    81561    80683   675840        0             0 ld
+[  23035]  1001 23035      720       22    32768        0             0 collect2
+[  23036]  1001 23036    77657    76888   647168        0             0 ld
+[  23235]  1001 23235     1919      106    36864        0             0 performance_scr
+[  23237]  1001 23237     2574       83    40960        0             0 top
+[  23238]  1001 23238      613       17    28672        0             0 awk
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=ld,pid=23034,uid=1001
+Out of memory: Killed process 23034 (ld) total-vm:326244kB, anon-rss:322408kB, file-rss:324kB, shmem-rss:0kB, UID:1001 pgtables:660kB oom_score_adj:0
+oom_reaper: reaped process 23034 (ld), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+vncserver-x11-c invoked oom-killer: gfp_mask=0xcc0(GFP_KERNEL), order=0, oom_score_adj=0
+CPU: 3 PID: 465 Comm: vncserver-x11-c Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000013 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:c12050cc r8:c12056ec r7:c0ddb15c r6:d8530f00 r5:daaccc40
+ r4:d8431dd8 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:d8431dd8 r5:00000558 r4:daaccc40
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:d8431dd8 r5:c1204fc8 r4:daaccc40
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:00000000 r5:00400100 r4:d8430000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03df988>] (__get_free_pages+0x24/0x3c)
+ r10:d99deac0 r9:008e4260 r8:d8431f58 r7:0000005f r6:bedf0fa1 r5:d8ea1600
+ r4:c1204fc8
+[<c03df964>] (__get_free_pages) from [<c049852c>] (proc_pid_cmdline_read+0x1a8/0x408)
+[<c0498384>] (proc_pid_cmdline_read) from [<c040cd5c>] (__vfs_read+0x48/0x1cc)
+ r10:00000000 r9:000041a0 r8:d8431f58 r7:008e4260 r6:c0498384 r5:c35c7e40
+ r4:c1204fc8
+[<c040cd14>] (__vfs_read) from [<c040cf7c>] (vfs_read+0x9c/0x170)
+ r10:00000000 r9:00000001 r8:d8431f58 r7:008e4260 r6:c35c7e40 r5:ffffe000
+ r4:000041a0
+[<c040cee0>] (vfs_read) from [<c040d330>] (ksys_read+0x68/0xe0)
+ r10:000041a0 r9:008e4260 r8:c35c7e40 r7:00000000 r6:00000000 r5:c35c7e40
+ r4:c1204fc8
+[<c040d2c8>] (ksys_read) from [<c040d3c0>] (sys_read+0x18/0x1c)
+ r10:00000003 r9:d8430000 r8:c02011c4 r7:00000003 r6:008e4260 r5:be8b7ddc
+ r4:be8b7ddc
+[<c040d3a8>] (sys_read) from [<c0201000>] (ret_fast_syscall+0x0/0x28)
+Exception stack(0xd8431fa8 to 0xd8431ff0)
+1fa0:                   be8b7ddc be8b7ddc 00000013 008e4260 000041a0 00000000
+1fc0: be8b7ddc be8b7ddc 008e4260 00000003 00000000 00000001 be8b7fc4 00001fff
+1fe0: 004f9470 be8b7d68 0023e3b0 b6de9238
+Mem-Info:
+active_anon:89606 inactive_anon:89667 isolated_anon:0
+                active_file:29 inactive_file:23 isolated_file:0
+                unevictable:16955 dirty:0 writeback:0 unstable:0
+                slab_reclaimable:4506 slab_unreclaimable:4575
+                mapped:10824 shmem:19455 pagetables:1455 bounce:0
+                free:4784 free_pcp:0 free_cma:525
+Node 0 active_anon:358424kB inactive_anon:358668kB active_file:116kB inactive_file:92kB unevictable:67820kB isolated(anon):0kB isolated(file):0kB mapped:43296kB dirty:0kB writeback:0kB shmem:77820kB writeback_tmp:0kB unstable:0kB all_unreclaimable? yes
+DMA free:18104kB min:16384kB low:20480kB high:24576kB active_anon:242460kB inactive_anon:318732kB active_file:132kB inactive_file:180kB unevictable:47484kB writepending:0kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1816kB pagetables:3160kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:2100kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:1032kB min:180kB low:1268kB high:2356kB active_anon:115964kB inactive_anon:39936kB active_file:0kB inactive_file:0kB unevictable:20336kB writepending:0kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:2660kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 619*4kB (UMEC) 479*8kB (UMEC) 337*16kB (UMEC) 121*32kB (UEC) 28*64kB (UC) 8*128kB (U) 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 18388kB
+HighMem: 62*4kB (UM) 12*8kB (UM) 14*16kB (UM) 12*32kB (U) 1*64kB (U) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 1016kB
+19793 total pagecache pages
+289 pages in swap cache
+Swap cache stats: add 67176, delete 66889, find 48328/60098
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8084      533   184320      173             0 systemd-journal
+[    154]     0   154     4611       12    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       17    61440      146             0 systemd-timesyn
+[    339]     0   339     1994       19    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      134    53248      110             0 rsyslogd
+[    351]     0   351      923       12    36864       42             0 alsactl
+[    352]     0   352      466        6    28672       10             0 rngd
+[    369]     0   369    16369      101    90112      441             0 udisksd
+[    372]   104   372     1691       93    40960       82          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       22    36864       52             0 avahi-daemon
+[    383]     0   383     3286       29    49152      148             0 systemd-logind
+[    405]   108   405     1443        1    32768       62             0 avahi-daemon
+[    410]     0   410      742       37    28672       68             0 dhcpcd
+[    454]     0   454     2157        0    45056       56             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      200             0 polkitd
+[    462]     0   462    10035       42    69632      173             0 lightdm
+[    465]     0   465    10977     4324   118784      372             0 vncserver-x11-c
+[    483]     0   483     2750       16    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      143         -1000 sshd
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    41871    11283   356352     3432             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     4895       53    61440       80             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       36    98304      302             0 lxsession
+[   1016]  1001  1016     1656       67    45056       67             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      164   139264     4135             0 fcitx
+[   1108]  1001  1108     1635       42    36864       52             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      195             0 gvfsd-fuse
+[   1130]  1001  1130    16292      240   106496      582             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      515   208896     1412             0 lxpanel
+[   1137]  1001  1137    24443      718   151552      968             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       29   102400      355             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      132    81920      410             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      162    81920      266             0 vncserverui
+[   1360]  1001  1360    43018     1073   299008     2696             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      164    36864      222             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821       74    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    17260     1114   106496     1069             0 php
+[  25271]  1001 25271      486       14    28672        0             0 sh
+[  25272]  1001 25272      485       14    32768        0             0 build-gcc
+[  25273]  1001 25273      923      425    36864        0             0 make
+[  25288]  1001 25288      768       63    32768        0             0 bash
+[  25301]  1001 25301      927      396    36864        0             0 make
+[  25306]  1001 25306      802       69    32768        0             0 bash
+[  25375]  1001 25375      953      463    32768        0             0 make
+[   5246]  1001  5246      803       94    32768        0             0 bash
+[   5270]  1001  5270     2912     2386    49152        0             0 make
+[  13209]  1001 13209      876       21    32768        0             0 g++
+[  13212]  1001 13212      720       21    32768        0             0 collect2
+[  13213]  1001 13213    53439    52567   454656        0             0 ld
+[  13226]  1001 13226      876       21    32768        0             0 g++
+[  13227]  1001 13227      720       22    28672        0             0 collect2
+[  13228]  1001 13228    55781    54913   466944        0             0 ld
+[  13231]  1001 13231      876       21    32768        0             0 g++
+[  13232]  1001 13232      720       22    32768        0             0 collect2
+[  13233]  1001 13233    56388    55509   475136        0             0 ld
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=ld,pid=13233,uid=1001
+Out of memory: Killed process 13233 (ld) total-vm:225552kB, anon-rss:222036kB, file-rss:0kB, shmem-rss:0kB, UID:1001 pgtables:464kB oom_score_adj:0
+oom_reaper: reaped process 13233 (ld), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+ld invoked oom-killer: gfp_mask=0x400dc2(GFP_KERNEL_ACCOUNT|__GFP_HIGHMEM|__GFP_ZERO), order=0, oom_score_adj=0
+CPU: 3 PID: 13213 Comm: ld Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000113 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:00001000 r8:c12a36d0 r7:c0ddb15c r6:c8704900 r5:d7c58f40
+ r4:cc221de8 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:cc221de8 r5:00000558 r4:d7c58f40
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:cc221de8 r5:c1204fc8 r4:d7c58f40
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:c12050cc r5:00001346 r4:00000000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03c3758>] (__pte_alloc+0x34/0x168)
+ r10:d8436440 r9:ffffe000 r8:00000055 r7:c81080d0 r6:da92c470 r5:d8436400
+ r4:c1204fc8
+[<c03c3724>] (__pte_alloc) from [<c03c5fe8>] (handle_mm_fault+0x370/0xde4)
+ r7:c81080d0 r6:00000040 r5:00000000 r4:c1204fc8
+[<c03c5c78>] (handle_mm_fault) from [<c0a94110>] (do_page_fault+0x150/0x380)
+ r10:d8436440 r9:c81080d0 r8:00000a06 r7:11c1fe8c r6:d8436400 r5:d9520f40
+ r4:cc221fb0
+[<c0a93fc0>] (do_page_fault) from [<c0a94420>] (do_translation_fault+0xe0/0x10c)
+ r10:11c1b000 r9:00025000 r8:00000a06 r7:11c1fe8c r6:c0a94340 r5:00000a06
+ r4:c120ab84
+[<c0a94340>] (do_translation_fault) from [<c0216bec>] (do_DataAbort+0x40/0xc0)
+ r9:00025000 r8:cc221fb0 r7:11c1fe8c r6:c0a94340 r5:00000a06 r4:c120ab84
+[<c0216bac>] (do_DataAbort) from [<c0201d24>] (__dabt_usr+0x44/0x60)
+Exception stack(0xcc221fb0 to 0xcc221ff8)
+1fa0:                                     11c1fe88 b6e6d7d4 00020179 11bfaec0
+1fc0: b6e6d7d4 00045149 11bfaeb8 00024fd1 b6e6d000 00025000 11c1b000 fffff000
+1fe0: 004d4000 be9c6460 b6df24c8 b6d93820 60000010 ffffffff
+ r8:30c5387d r7:30c5383d r6:ffffffff r5:60000010 r4:b6d93820
+Mem-Info:
+active_anon:89567 inactive_anon:89577 isolated_anon:0
+                active_file:216 inactive_file:207 isolated_file:32
+                unevictable:16955 dirty:0 writeback:0 unstable:0
+                slab_reclaimable:4380 slab_unreclaimable:4573
+                mapped:11042 shmem:19475 pagetables:1436 bounce:0
+                free:4774 free_pcp:57 free_cma:828
+Node 0 active_anon:358268kB inactive_anon:358308kB active_file:864kB inactive_file:828kB unevictable:67820kB isolated(anon):0kB isolated(file):128kB mapped:44168kB dirty:0kB writeback:0kB shmem:77900kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+DMA free:18404kB min:16384kB low:20480kB high:24576kB active_anon:254120kB inactive_anon:306412kB active_file:500kB inactive_file:836kB unevictable:47484kB writepending:0kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1800kB pagetables:2976kB bounce:0kB free_pcp:212kB local_pcp:120kB free_cma:3312kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:692kB min:4276kB low:5364kB high:6452kB active_anon:104148kB inactive_anon:51896kB active_file:64kB inactive_file:44kB unevictable:20336kB writepending:0kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:2768kB bounce:0kB free_pcp:16kB local_pcp:0kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 484*4kB (UEC) 425*8kB (UEC) 263*16kB (UEC) 122*32kB (UEC) 33*64kB (UC) 8*128kB (U) 6*256kB (C) 0*512kB 0*1024kB 0*2048kB 0*4096kB = 18120kB
+HighMem: 72*4kB (UM) 5*8kB (M) 7*16kB (UM) 5*32kB (UM) 1*64kB (U) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 664kB
+20226 total pagecache pages
+308 pages in swap cache
+Swap cache stats: add 67216, delete 66910, find 48328/60118
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8084      540   184320      173             0 systemd-journal
+[    154]     0   154     4611       12    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       17    61440      146             0 systemd-timesyn
+[    339]     0   339     1994       19    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      141    53248      105             0 rsyslogd
+[    351]     0   351      923       12    36864       42             0 alsactl
+[    352]     0   352      466        6    28672       10             0 rngd
+[    369]     0   369    16369      101    90112      441             0 udisksd
+[    372]   104   372     1691       93    40960       82          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       22    36864       52             0 avahi-daemon
+[    383]     0   383     3286       29    49152      148             0 systemd-logind
+[    405]   108   405     1443        1    32768       62             0 avahi-daemon
+[    410]     0   410      742       37    28672       68             0 dhcpcd
+[    454]     0   454     2157        0    45056       56             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      200             0 polkitd
+[    462]     0   462    10035       42    69632      173             0 lightdm
+[    465]     0   465    10977     4324   118784      372             0 vncserver-x11-c
+[    483]     0   483     2750       16    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      143         -1000 sshd
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    41871    11371   356352     3432             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     4895       53    61440       80             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       36    98304      302             0 lxsession
+[   1016]  1001  1016     1656       66    45056       67             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      164   139264     4135             0 fcitx
+[   1108]  1001  1108     1635       42    36864       52             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      195             0 gvfsd-fuse
+[   1130]  1001  1130    16292      240   106496      582             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      515   208896     1412             0 lxpanel
+[   1137]  1001  1137    24443      718   151552      968             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       29   102400      355             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      132    81920      410             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      162    81920      266             0 vncserverui
+[   1360]  1001  1360    43018     1073   299008     2696             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      164    36864      222             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821       73    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    17260     1127   106496     1089             0 php
+[  25271]  1001 25271      486       14    28672        0             0 sh
+[  25272]  1001 25272      485       14    32768        0             0 build-gcc
+[  25273]  1001 25273      923      425    36864        0             0 make
+[  25288]  1001 25288      768       63    32768        0             0 bash
+[  25301]  1001 25301      927      396    36864        0             0 make
+[  25306]  1001 25306      802       69    32768        0             0 bash
+[  25375]  1001 25375      953      463    32768        0             0 make
+[   5246]  1001  5246      803       94    32768        0             0 bash
+[   5270]  1001  5270     2912     2398    49152        0             0 make
+[  13209]  1001 13209      876       21    32768        0             0 g++
+[  13212]  1001 13212      720       21    32768        0             0 collect2
+[  13213]  1001 13213    80504    79567   667648        0             0 ld
+[  13226]  1001 13226      876       21    32768        0             0 g++
+[  13227]  1001 13227      720       22    28672        0             0 collect2
+[  13228]  1001 13228    84288    83352   692224        0             0 ld
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=ld,pid=13228,uid=1001
+Out of memory: Killed process 13228 (ld) total-vm:337152kB, anon-rss:333408kB, file-rss:0kB, shmem-rss:0kB, UID:1001 pgtables:676kB oom_score_adj:0
+oom_reaper: reaped process 13228 (ld), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+mkdir invoked oom-killer: gfp_mask=0xdc0(GFP_KERNEL|__GFP_ZERO), order=0, oom_score_adj=0
+CPU: 0 PID: 2257 Comm: mkdir Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000113 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:c12050cc r8:c12056ec r7:c0ddb15c r6:caf1b300 r5:daacadc0
+ r4:d6c31bd0 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:d6c31bd0 r5:00000558 r4:daacadc0
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:d6c31bd0 r5:c1204fc8 r4:daacadc0
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:00000000 r5:00400000 r4:d6c30000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03df988>] (__get_free_pages+0x24/0x3c)
+ r10:d11a2840 r9:c8e7d680 r8:00000015 r7:d63fb740 r6:00000000 r5:d63fb740
+ r4:d11a2800
+[<c03df964>] (__get_free_pages) from [<c03df9c0>] (get_zeroed_page+0x20/0x24)
+[<c03df9a0>] (get_zeroed_page) from [<c03c5bc8>] (__pmd_alloc+0x24/0xd4)
+[<c03c5ba4>] (__pmd_alloc) from [<c03c6208>] (handle_mm_fault+0x590/0xde4)
+ r7:d63fb740 r6:00000000 r5:0002f000 r4:c1204fc8
+[<c03c5c78>] (handle_mm_fault) from [<c0a94110>] (do_page_fault+0x150/0x380)
+ r10:d11a2840 r9:c8e7d680 r8:00000a05 r7:0002f1dc r6:d11a2800 r5:d7c54c40
+ r4:d6c31db8
+[<c0a93fc0>] (do_page_fault) from [<c0a94420>] (do_translation_fault+0xe0/0x10c)
+ r10:0002f1dc r9:d6c30000 r8:00000a05 r7:0002f1dc r6:c0a94340 r5:00000a05
+ r4:c120ab74
+[<c0a94340>] (do_translation_fault) from [<c0216bec>] (do_DataAbort+0x40/0xc0)
+ r9:d6c30000 r8:d6c31db8 r7:0002f1dc r6:c0a94340 r5:00000a05 r4:c120ab74
+[<c0216bac>] (do_DataAbort) from [<c02019b4>] (__dabt_svc+0x54/0x80)
+Exception stack(0xd6c31db8 to 0xd6c31e00)
+1da0:                                                       0002f1dc beffffff
+1dc0: 00000000 d6c30000 ffffe000 0002f1dc 00000000 00000e24 c1204fc8 00000000
+1de0: 0002f1dc d6c31e3c 4102f1dc d6c31e08 c06a2354 c0a73144 00000113 ffffffff
+ r8:c1204fc8 r7:d6c31dec r6:ffffffff r5:00000113 r4:c0a73144
+[<c06a22b4>] (__clear_user_memset) from [<c06a2a1c>] (arm_clear_user+0x28/0x2c)
+ r8:00000000 r7:c80c4400 r6:c80c4000 r5:c1204fc8 r4:c800b480
+[<c06a29f4>] (arm_clear_user) from [<c047e5f4>] (clear_user+0x40/0x4c)
+[<c047e5b4>] (clear_user) from [<c047f91c>] (load_elf_binary+0x10b8/0x1338)
+[<c047e864>] (load_elf_binary) from [<c04152e4>] (search_binary_handler+0xc4/0x250)
+ r10:c80c4000 r9:c0de185c r8:c133a758 r7:c1227048 r6:fffffff8 r5:c133a758
+ r4:c122a854
+[<c0415220>] (search_binary_handler) from [<c04159e0>] (__do_execve_file+0x570/0x84c)
+ r10:c80c4000 r9:000008d1 r8:000008d1 r7:ffffe000 r6:d7c54c40 r5:dab97000
+ r4:c1204fc8
+[<c0415470>] (__do_execve_file) from [<c04160b0>] (sys_execve+0x44/0x4c)
+ r10:0000000b r9:d6c30000 r8:c02011c4 r7:0000000b r6:0002334c r5:016fe854
+ r4:016fe830
+[<c041606c>] (sys_execve) from [<c0201000>] (ret_fast_syscall+0x0/0x28)
+Exception stack(0xd6c31fa8 to 0xd6c31ff0)
+1fa0:                   016fe89c 016fe830 016fe89c 016fe830 016fe854 98632400
+1fc0: 016fe89c 016fe830 0002334c 0000000b 00038568 016fe854 0002334c 00024414
+1fe0: 00035f80 bea5f844 00014b90 b6e829ac
+ r5:016fe830 r4:016fe89c
+Mem-Info:
+active_anon:67347 inactive_anon:68039 isolated_anon:0
+                active_file:407 inactive_file:808 isolated_file:0
+                unevictable:16865 dirty:0 writeback:0 unstable:0
+                slab_reclaimable:4431 slab_unreclaimable:4545
+                mapped:12161 shmem:19439 pagetables:1435 bounce:0
+                free:47520 free_pcp:8 free_cma:42417
+Node 0 active_anon:269388kB inactive_anon:272156kB active_file:1628kB inactive_file:3232kB unevictable:67460kB isolated(anon):0kB isolated(file):0kB mapped:48644kB dirty:0kB writeback:0kB shmem:77756kB writeback_tmp:0kB unstable:0kB all_unreclaimable? yes
+DMA free:185840kB min:16384kB low:20480kB high:24576kB active_anon:200740kB inactive_anon:200812kB active_file:508kB inactive_file:1144kB unevictable:38644kB writepending:0kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1896kB pagetables:2936kB bounce:0kB free_pcp:32kB local_pcp:0kB free_cma:169668kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:4240kB min:180kB low:1268kB high:2356kB active_anon:68648kB inactive_anon:71344kB active_file:1296kB inactive_file:2564kB unevictable:28816kB writepending:0kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:2804kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 1647*4kB (UMEC) 946*8kB (UMEC) 1094*16kB (UMEC) 967*32kB (UMEC) 729*64kB (UEC) 327*128kB (UC) 88*256kB (C) 25*512kB (C) 0*1024kB 0*2048kB 0*4096kB = 186444kB
+HighMem: 654*4kB (UM) 126*8kB (UM) 17*16kB (UM) 9*32kB (U) 3*64kB (U) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 4376kB
+20912 total pagecache pages
+194 pages in swap cache
+Swap cache stats: add 67978, delete 67786, find 48463/60580
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8084      553   184320      178             0 systemd-journal
+[    154]     0   154     4611       17    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       12    61440      151             0 systemd-timesyn
+[    339]     0   339     1994       18    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      135    53248      111             0 rsyslogd
+[    351]     0   351      923       11    36864       42             0 alsactl
+[    352]     0   352      466        5    28672       11             0 rngd
+[    369]     0   369    16369       99    90112      443             0 udisksd
+[    372]   104   372     1691       69    40960      106          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       22    36864       52             0 avahi-daemon
+[    383]     0   383     3286       23    49152      154             0 systemd-logind
+[    405]   108   405     1443        0    32768       63             0 avahi-daemon
+[    410]     0   410      742       34    28672       71             0 dhcpcd
+[    454]     0   454     2157        0    45056       57             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      201             0 polkitd
+[    462]     0   462    10035       41    69632      174             0 lightdm
+[    465]     0   465    10977     4421   118784      354             0 vncserver-x11-c
+[    483]     0   483     2750       16    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      144         -1000 sshd
+[    505]     0   505     1405        1    40960      112             0 login
+[    533]  1000   533     3679        0    53248      246             0 systemd
+[    534]  1000   534     4206        0    53248      414             0 (sd-pam)
+[    573]     0   573    41870    11792   356352     3420             0 Xorg
+[    590]  1000   590     2123        1    36864      220             0 bash
+[    609]     0   609     4895       53    61440       80             0 vncagent
+[    641]     0   641      535        0    28672       32             0 hciattach
+[    651]     0   651     2452        1    45056      100             0 bluetoothd
+[    653]     0   653     6677        0    49152      111             0 bluealsa
+[    707]     0   707     8116        5    69632      187             0 lightdm
+[    959]  1001   959     3699        0    49152      268             0 systemd
+[    964]  1001   964     8816        1    65536      441             0 (sd-pam)
+[   1007]  1001  1007    14163       36    98304      302             0 lxsession
+[   1016]  1001  1016     1656       72    45056       65             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      197   139264     4101             0 fcitx
+[   1108]  1001  1108     1635       41    36864       52             0 dbus-daemon
+[   1114]  1001  1114     1155        0    32768       44             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      174             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      196             0 gvfsd-fuse
+[   1130]  1001  1130    16292      258   106496      564             0 openbox
+[   1132]  1001  1132    11873        1    90112      280             0 lxpolkit
+[   1135]  1001  1135    41051      528   208896     1415             0 lxpanel
+[   1137]  1001  1137    24443      697   155648      995             0 pcmanfm
+[   1142]  1001  1142     1130        0    32768       72             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       17             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       68             0 xcompmgr
+[   1177]  1001  1177    22224       28   102400      356             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      124             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      151             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      162             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      137             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      203             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      130    81920      412             0 vncserverui
+[   1215]  1001  1215    13827       19    86016      204             0 gvfsd-trash
+[   1221]  1001  1221     8005      101    81920      327             0 vncserverui
+[   1360]  1001  1360    43018     1054   299008     2714             0 lxterminal
+[   1366]  1001  1366     2166      142    36864      145             0 bash
+[   1383]  1001  1383     2272      116    36864      270             0 bash
+[   1763]  1001  1763     6499       60    57344       50             0 dconf-service
+[  11166]  1001 11166     7821       73    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       21             0 phoronix-test-s
+[  32709]  1001 32709    16748     1118   102400      964             0 php
+[  13326]  1001 13326      486       14    24576        0             0 sh
+[  13327]  1001 13327      485       14    28672        0             0 build-gdb
+[  14512]  1001 14512      760      197    32768        0             0 make
+[  14514]  1001 14514      767       56    36864        0             0 bash
+[  14526]  1001 14526      783      265    32768        0             0 make
+[   1299]  1001  1299      768       69    32768        0             0 bash
+[   1305]  1001  1305      801       77    28672        0             0 bash
+[   1315]  1001  1315      730      254    32768        0             0 make
+[   2084]  1001  2084      767       56    28672        0             0 bash
+[   2085]  1001  2085      839       17    28672        0             0 g++
+[   2086]  1001  2086    67980    60980   569344        0             0 cc1plus
+[   2152]  1001  2152      767       56    32768        0             0 bash
+[   2153]  1001  2153      839       17    32768        0             0 g++
+[   2154]  1001  2154    29150    22311   258048        0             0 cc1plus
+[   2168]  1001  2168      767       56    28672        0             0 bash
+[   2169]  1001  2169      839       17    28672        0             0 g++
+[   2170]  1001  2170    27794    20869   241664        0             0 cc1plus
+[   2174]  1001  2174      767       56    32768        0             0 bash
+[   2175]  1001  2175      839       17    28672        0             0 g++
+[   2176]  1001  2176    25083    18220   225280        0             0 cc1plus
+[   2253]     0  2253      485       45    32768        0             0 dhcpcd-run-hook
+[   2255]     0  2255      485       29    32768        0             0 resolvconf
+[   2257]     0  2257       49        1     8192        0             0 mkdir
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=cc1plus,pid=2086,uid=1001
+Out of memory: Killed process 2086 (cc1plus) total-vm:271920kB, anon-rss:243352kB, file-rss:568kB, shmem-rss:0kB, UID:1001 pgtables:556kB oom_score_adj:0
+oom_reaper: reaped process 2086 (cc1plus), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Xorg invoked oom-killer: gfp_mask=0xcc0(GFP_KERNEL), order=0, oom_score_adj=0
+CPU: 3 PID: 573 Comm: Xorg Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000013 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:c12050cc r8:c12056ec r7:c0ddb15c r6:d8e68600 r5:c8734c40
+ r4:d83d5dd8 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:d83d5dd8 r5:00000558 r4:c8734c40
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:d83d5dd8 r5:c1204fc8 r4:c8734c40
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:00000000 r5:00400100 r4:d83d4000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03df988>] (__get_free_pages+0x24/0x3c)
+ r10:d9120000 r9:bedefb40 r8:d83d5f58 r7:00000025 r6:be8b8f3c r5:d9411000
+ r4:c1204fc8
+[<c03df964>] (__get_free_pages) from [<c049852c>] (proc_pid_cmdline_read+0x1a8/0x408)
+[<c0498384>] (proc_pid_cmdline_read) from [<c040cd5c>] (__vfs_read+0x48/0x1cc)
+ r10:00000000 r9:00001001 r8:d83d5f58 r7:bedefb40 r6:c0498384 r5:d861d600
+ r4:c1204fc8
+[<c040cd14>] (__vfs_read) from [<c040cf7c>] (vfs_read+0x9c/0x170)
+ r10:00000000 r9:00000001 r8:d83d5f58 r7:bedefb40 r6:d861d600 r5:ffffe000
+ r4:00001001
+[<c040cee0>] (vfs_read) from [<c040d330>] (ksys_read+0x68/0xe0)
+ r10:00001001 r9:bedefb40 r8:d861d600 r7:00000000 r6:00000000 r5:d861d603
+ r4:c1204fc8
+[<c040d2c8>] (ksys_read) from [<c040d3c0>] (sys_read+0x18/0x1c)
+ r10:00000003 r9:d83d4000 r8:c02011c4 r7:00000003 r6:00000026 r5:bedefb40
+ r4:00001001
+[<c040d3a8>] (sys_read) from [<c0201000>] (ret_fast_syscall+0x0/0x28)
+Exception stack(0xd83d5fa8 to 0xd83d5ff0)
+5fa0:                   00001001 bedefb40 00000026 bedefb40 00001001 00000000
+5fc0: 00001001 bedefb40 00000026 00000003 02a1ee2c 00000026 00202688 00212eb0
+5fe0: 00000002 bedefb20 00000000 b6a2b274
+Mem-Info:
+active_anon:70957 inactive_anon:71036 isolated_anon:0
+                active_file:1007 inactive_file:1173 isolated_file:0
+                unevictable:14246 dirty:333 writeback:0 unstable:0
+                slab_reclaimable:4475 slab_unreclaimable:4572
+                mapped:12726 shmem:16847 pagetables:1429 bounce:0
+                free:42731 free_pcp:30 free_cma:37912
+Node 0 active_anon:283828kB inactive_anon:284144kB active_file:4028kB inactive_file:4692kB unevictable:56984kB isolated(anon):0kB isolated(file):0kB mapped:50904kB dirty:1332kB writeback:0kB shmem:67388kB writeback_tmp:0kB unstable:0kB all_unreclaimable? yes
+DMA free:167052kB min:16384kB low:20480kB high:24576kB active_anon:203000kB inactive_anon:218516kB active_file:48kB inactive_file:1036kB unevictable:38132kB writepending:1092kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1840kB pagetables:2628kB bounce:0kB free_pcp:60kB local_pcp:0kB free_cma:151648kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:3872kB min:180kB low:1268kB high:2356kB active_anon:80828kB inactive_anon:65628kB active_file:3980kB inactive_file:3656kB unevictable:18852kB writepending:240kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:3088kB bounce:0kB free_pcp:60kB local_pcp:40kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 709*4kB (UMEC) 779*8kB (UMEC) 808*16kB (UEC) 795*32kB (UMEC) 677*64kB (UEC) 332*128kB (UC) 104*256kB (C) 14*512kB (C) 0*1024kB 0*2048kB 0*4096kB = 167052kB
+HighMem: 140*4kB (UM) 126*8kB (UM) 30*16kB (U) 25*32kB (U) 16*64kB (U) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 3872kB
+19278 total pagecache pages
+237 pages in swap cache
+Swap cache stats: add 68513, delete 68278, find 48595/60966
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8083      603   180224      170             0 systemd-journal
+[    154]     0   154     4611       24    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       12    61440      151             0 systemd-timesyn
+[    339]     0   339     1994       20    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      135    53248      111             0 rsyslogd
+[    351]     0   351      923       11    36864       42             0 alsactl
+[    352]     0   352      466        5    28672       11             0 rngd
+[    369]     0   369    16369       99    90112      443             0 udisksd
+[    372]   104   372     1691      110    40960       82          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       22    36864       52             0 avahi-daemon
+[    383]     0   383     3286       44    49152      148             0 systemd-logind
+[    405]   108   405     1443        1    32768       62             0 avahi-daemon
+[    410]     0   410      742       34    28672       71             0 dhcpcd
+[    454]     0   454     2157        0    45056       56             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      200             0 polkitd
+[    462]     0   462    10035       42    69632      173             0 lightdm
+[    465]     0   465    10977     4654   118784      349             0 vncserver-x11-c
+[    483]     0   483     2750       16    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      143         -1000 sshd
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    41858    11759   356352     3422             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     4895      112    61440       80             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       36    98304      302             0 lxsession
+[   1016]  1001  1016     1656       85    45056       66             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      158   139264     4140             0 fcitx
+[   1108]  1001  1108     1635       40    36864       53             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      195             0 gvfsd-fuse
+[   1130]  1001  1130    16292      233   106496      589             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      578   208896     1425             0 lxpanel
+[   1137]  1001  1137    24443      730   155648     1003             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       29   102400      355             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      131    81920      411             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      152    81920      276             0 vncserverui
+[   1360]  1001  1360    43018     1046   299008     2723             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      113    36864      273             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821       91    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    16748     1034   102400     1066             0 php
+[   2290]  1001  2290      486       14    32768        0             0 sh
+[   2291]  1001  2291      485       14    24576        0             0 build-gdb
+[   3484]  1001  3484      760      209    28672        0             0 make
+[   3486]  1001  3486      767       69    32768        0             0 bash
+[   3498]  1001  3498      783      299    28672        0             0 make
+[  22628]  1001 22628      768       82    32768        0             0 bash
+[  22634]  1001 22634      801       90    28672        0             0 bash
+[  22644]  1001 22644      730      252    28672        0             0 make
+[  23442]  1001 23442      767       69    28672        0             0 bash
+[  23443]  1001 23443      839       17    32768        0             0 g++
+[  23444]  1001 23444    66381    58986   552960        0             0 cc1plus
+[  23494]  1001 23494      767       69    32768        0             0 bash
+[  23495]  1001 23495      839       17    28672        0             0 g++
+[  23496]  1001 23496    33029    27002   282624        0             0 cc1plus
+[  23500]  1001 23500      767       69    28672        0             0 bash
+[  23501]  1001 23501      839       17    28672        0             0 g++
+[  23502]  1001 23502    29680    23234   253952        0             0 cc1plus
+[  23504]  1001 23504      767       69    28672        0             0 bash
+[  23505]  1001 23505      839       17    32768        0             0 g++
+[  23506]  1001 23506    27777    20864   249856        0             0 cc1plus
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=cc1plus,pid=23444,uid=1001
+Out of memory: Killed process 23444 (cc1plus) total-vm:265524kB, anon-rss:235308kB, file-rss:636kB, shmem-rss:0kB, UID:1001 pgtables:540kB oom_score_adj:0
+oom_reaper: reaped process 23444 (cc1plus), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Xorg invoked oom-killer: gfp_mask=0xcc0(GFP_KERNEL), order=0, oom_score_adj=0
+CPU: 0 PID: 573 Comm: Xorg Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000113 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:c12050cc r8:c12056ec r7:c0ddb15c r6:d8e68600 r5:da922dc0
+ r4:d83d5dd8 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:d83d5dd8 r5:00000558 r4:da922dc0
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:d83d5dd8 r5:c1204fc8 r4:da922dc0
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:00000000 r5:00400100 r4:d83d4000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03df988>] (__get_free_pages+0x24/0x3c)
+ r10:d9120000 r9:bedefb40 r8:d83d5f58 r7:00000025 r6:be8b8f3c r5:d9411000
+ r4:c1204fc8
+[<c03df964>] (__get_free_pages) from [<c049852c>] (proc_pid_cmdline_read+0x1a8/0x408)
+[<c0498384>] (proc_pid_cmdline_read) from [<c040cd5c>] (__vfs_read+0x48/0x1cc)
+ r10:00000000 r9:00001001 r8:d83d5f58 r7:bedefb40 r6:c0498384 r5:d8e45d80
+ r4:c1204fc8
+[<c040cd14>] (__vfs_read) from [<c040cf7c>] (vfs_read+0x9c/0x170)
+ r10:00000000 r9:00000001 r8:d83d5f58 r7:bedefb40 r6:d8e45d80 r5:ffffe000
+ r4:00001001
+[<c040cee0>] (vfs_read) from [<c040d330>] (ksys_read+0x68/0xe0)
+ r10:00001001 r9:bedefb40 r8:d8e45d80 r7:00000000 r6:00000000 r5:d8e45d83
+ r4:c1204fc8
+[<c040d2c8>] (ksys_read) from [<c040d3c0>] (sys_read+0x18/0x1c)
+ r10:00000003 r9:d83d4000 r8:c02011c4 r7:00000003 r6:00000026 r5:bedefb40
+ r4:00001001
+[<c040d3a8>] (sys_read) from [<c0201000>] (ret_fast_syscall+0x0/0x28)
+Exception stack(0xd83d5fa8 to 0xd83d5ff0)
+5fa0:                   00001001 bedefb40 00000026 bedefb40 00001001 00000000
+5fc0: 00001001 bedefb40 00000026 00000003 0290a014 00000026 00202688 00212eb0
+5fe0: 00000002 bedefb20 00000000 b6a2b274
+Mem-Info:
+active_anon:73484 inactive_anon:75000 isolated_anon:0
+                active_file:176 inactive_file:368 isolated_file:0
+                unevictable:17007 dirty:0 writeback:0 unstable:0
+                slab_reclaimable:4416 slab_unreclaimable:4603
+                mapped:10378 shmem:19614 pagetables:1450 bounce:0
+                free:34988 free_pcp:13 free_cma:30507
+Node 0 active_anon:293936kB inactive_anon:300000kB active_file:704kB inactive_file:1472kB unevictable:68028kB isolated(anon):0kB isolated(file):0kB mapped:41512kB dirty:0kB writeback:0kB shmem:78456kB writeback_tmp:0kB unstable:0kB all_unreclaimable? yes
+DMA free:138344kB min:16384kB low:20480kB high:24576kB active_anon:222636kB inactive_anon:222936kB active_file:232kB inactive_file:268kB unevictable:43124kB writepending:0kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1880kB pagetables:2724kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:122028kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:1608kB min:180kB low:1268kB high:2356kB active_anon:71300kB inactive_anon:77064kB active_file:444kB inactive_file:1192kB unevictable:24904kB writepending:0kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:3076kB bounce:0kB free_pcp:52kB local_pcp:48kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 1502*4kB (UMEC) 1034*8kB (UEC) 492*16kB (UEC) 244*32kB (UEC) 247*64kB (UEC) 269*128kB (UC) 95*256kB (C) 17*512kB (UC) 3*1024kB (C) 1*2048kB (C) 5*4096kB (C) = 138824kB
+HighMem: 107*4kB (UM) 113*8kB (UM) 3*16kB (U) 1*32kB (U) 1*64kB (M) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 1476kB
+20423 total pagecache pages
+184 pages in swap cache
+Swap cache stats: add 68824, delete 68642, find 48699/61178
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8083      588   180224      170             0 systemd-journal
+[    154]     0   154     4611       12    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       17    61440      146             0 systemd-timesyn
+[    339]     0   339     1994       18    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      141    53248      105             0 rsyslogd
+[    351]     0   351      923       11    36864       42             0 alsactl
+[    352]     0   352      466        5    28672       11             0 rngd
+[    369]     0   369    16369      100    90112      442             0 udisksd
+[    372]   104   372     1691       91    40960       83          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       26    36864       49             0 avahi-daemon
+[    383]     0   383     3286       29    49152      148             0 systemd-logind
+[    405]   108   405     1443        1    32768       62             0 avahi-daemon
+[    410]     0   410      742       35    28672       70             0 dhcpcd
+[    454]     0   454     2157        0    45056       56             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      200             0 polkitd
+[    462]     0   462    10035       41    69632      173             0 lightdm
+[    465]     0   465    10977     4384   118784      348             0 vncserver-x11-c
+[    483]     0   483     2750       16    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      143         -1000 sshd
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    42127    10752   352256     3427             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     4895       55    61440       79             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       36    98304      302             0 lxsession
+[   1016]  1001  1016     1656       67    45056       66             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      137   139264     4161             0 fcitx
+[   1108]  1001  1108     1635       40    36864       53             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      195             0 gvfsd-fuse
+[   1130]  1001  1130    16292      237   106496      584             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      519   208896     1408             0 lxpanel
+[   1137]  1001  1137    24443      689   155648     1003             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       29   102400      355             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      132    81920      410             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      151    81920      277             0 vncserverui
+[   1360]  1001  1360    43018     1037   299008     2732             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      113    36864      273             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821      115    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    16748     1017   102400     1065             0 php
+[  23540]  1001 23540      486       14    28672        0             0 sh
+[  23541]  1001 23541      485       14    28672        0             0 build-gdb
+[  24725]  1001 24725      760      194    36864        0             0 make
+[  24727]  1001 24727      767       55    36864        0             0 bash
+[  24739]  1001 24739      782      286    36864        0             0 make
+[  11504]  1001 11504      768       68    24576        0             0 bash
+[  11510]  1001 11510      801       76    24576        0             0 bash
+[  11520]  1001 11520      760      258    24576        0             0 make
+[  12311]  1001 12311      767       55    36864        0             0 bash
+[  12312]  1001 12312      839       17    32768        0             0 g++
+[  12313]  1001 12313    76720    69586   626688        0             0 cc1plus
+[  12460]  1001 12460      767       55    28672        0             0 bash
+[  12461]  1001 12461      839       17    32768        0             0 g++
+[  12462]  1001 12462    34406    26647   294912        0             0 cc1plus
+[  12465]  1001 12465      767       55    32768        0             0 bash
+[  12466]  1001 12466      839       17    28672        0             0 g++
+[  12467]  1001 12467    32668    24717   278528        0             0 cc1plus
+[  12470]  1001 12470      767       55    32768        0             0 bash
+[  12471]  1001 12471      839       17    32768        0             0 g++
+[  12472]  1001 12472    21747    14371   196608        0             0 cc1plus
+[  12578]     0 12578       95        1    20480        0             0 dhcpcd-run-hook
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=cc1plus,pid=12313,uid=1001
+Out of memory: Killed process 12313 (cc1plus) total-vm:306880kB, anon-rss:278232kB, file-rss:112kB, shmem-rss:0kB, UID:1001 pgtables:612kB oom_score_adj:0
+oom_reaper: reaped process 12313 (cc1plus), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Xorg invoked oom-killer: gfp_mask=0xcc0(GFP_KERNEL), order=0, oom_score_adj=0
+CPU: 2 PID: 573 Comm: Xorg Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000113 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:00001000 r8:c12a36d0 r7:c0ddb15c r6:d8e68600 r5:da8edb80
+ r4:d83d5dd8 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:d83d5dd8 r5:00000558 r4:da8edb80
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:d83d5dd8 r5:c1204fc8 r4:da8edb80
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:c12050cc r5:0000e51a r4:00000000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03df988>] (__get_free_pages+0x24/0x3c)
+ r10:d9120000 r9:bedefb40 r8:d83d5f58 r7:00000025 r6:be8b8f3c r5:d9411000
+ r4:c1204fc8
+[<c03df964>] (__get_free_pages) from [<c049852c>] (proc_pid_cmdline_read+0x1a8/0x408)
+[<c0498384>] (proc_pid_cmdline_read) from [<c040cd5c>] (__vfs_read+0x48/0x1cc)
+ r10:00000000 r9:00001001 r8:d83d5f58 r7:bedefb40 r6:c0498384 r5:d639c9c0
+ r4:c1204fc8
+[<c040cd14>] (__vfs_read) from [<c040cf7c>] (vfs_read+0x9c/0x170)
+ r10:00000000 r9:00000001 r8:d83d5f58 r7:bedefb40 r6:d639c9c0 r5:ffffe000
+ r4:00001001
+[<c040cee0>] (vfs_read) from [<c040d330>] (ksys_read+0x68/0xe0)
+ r10:00001001 r9:bedefb40 r8:d639c9c0 r7:00000000 r6:00000000 r5:d639c9c3
+ r4:c1204fc8
+[<c040d2c8>] (ksys_read) from [<c040d3c0>] (sys_read+0x18/0x1c)
+ r10:00000003 r9:d83d4000 r8:c02011c4 r7:00000003 r6:00000026 r5:bedefb40
+ r4:00001001
+[<c040d3a8>] (sys_read) from [<c0201000>] (ret_fast_syscall+0x0/0x28)
+Exception stack(0xd83d5fa8 to 0xd83d5ff0)
+5fa0:                   00001001 bedefb40 00000026 bedefb40 00001001 00000000
+5fc0: 00001001 bedefb40 00000026 00000003 02a522ac 00000026 00202688 00212eb0
+5fe0: 00000002 bedefb20 00000000 b6a2b274
+Mem-Info:
+active_anon:61693 inactive_anon:62478 isolated_anon:0
+                active_file:504 inactive_file:716 isolated_file:0
+                unevictable:16069 dirty:0 writeback:3 unstable:0
+                slab_reclaimable:4447 slab_unreclaimable:4608
+                mapped:12119 shmem:18669 pagetables:1523 bounce:0
+                free:59423 free_pcp:13 free_cma:54563
+Node 0 active_anon:246772kB inactive_anon:249912kB active_file:2016kB inactive_file:2864kB unevictable:64276kB isolated(anon):0kB isolated(file):0kB mapped:48476kB dirty:0kB writeback:12kB shmem:74676kB writeback_tmp:0kB unstable:0kB all_unreclaimable? yes
+DMA free:233396kB min:16384kB low:20480kB high:24576kB active_anon:172180kB inactive_anon:176976kB active_file:564kB inactive_file:576kB unevictable:43316kB writepending:12kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1952kB pagetables:3112kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:218252kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:4296kB min:180kB low:1268kB high:2356kB active_anon:74592kB inactive_anon:72936kB active_file:1836kB inactive_file:2332kB unevictable:20960kB writepending:0kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:2980kB bounce:0kB free_pcp:52kB local_pcp:24kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 705*4kB (UMEC) 460*8kB (UEC) 143*16kB (UEC) 126*32kB (UEC) 216*64kB (UC) 227*128kB (UC) 126*256kB (UC) 75*512kB (UC) 21*1024kB (C) 2*2048kB (C) 20*4096kB (C) = 233876kB
+HighMem: 365*4kB (UM) 38*8kB (UM) 15*16kB (U) 46*32kB (U) 10*64kB (U) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 4116kB
+20415 total pagecache pages
+485 pages in swap cache
+Swap cache stats: add 70681, delete 70198, find 49766/62982
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8081      573   172032      173             0 systemd-journal
+[    154]     0   154     4611       12    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       17    61440      146             0 systemd-timesyn
+[    339]     0   339     1994       18    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      138    53248      108             0 rsyslogd
+[    351]     0   351      923       11    36864       42             0 alsactl
+[    352]     0   352      466        6    28672       10             0 rngd
+[    369]     0   369    16369      102    90112      440             0 udisksd
+[    372]   104   372     1691       77    40960       99          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       20    36864       55             0 avahi-daemon
+[    383]     0   383     3286       24    49152      153             0 systemd-logind
+[    405]   108   405     1443        1    32768       62             0 avahi-daemon
+[    410]     0   410      742       36    28672       69             0 dhcpcd
+[    454]     0   454     2157        0    45056       56             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      200             0 polkitd
+[    462]     0   462    10035       41    69632      173             0 lightdm
+[    465]     0   465    10977     4431   118784      346             0 vncserver-x11-c
+[    483]     0   483     2750       16    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      143         -1000 sshd
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    42001    11918   356352     3420             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     4895       96    61440       80             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       45    98304      293             0 lxsession
+[   1016]  1001  1016     1656       81    45056       65             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      169   139264     4129             0 fcitx
+[   1108]  1001  1108     1635       41    36864       52             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      167             0 gvfsd-fuse
+[   1130]  1001  1130    16292      241   106496      580             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      518   208896     1409             0 lxpanel
+[   1137]  1001  1137    24443      685   155648     1012             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       29   102400      355             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      133    81920      409             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      163    81920      265             0 vncserverui
+[   1360]  1001  1360    43018     1092   299008     2677             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      157    36864      228             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821       87    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    16748      868   102400     1228             0 php
+[   2889]  1001  2889      486       14    32768        0             0 sh
+[   2890]  1001  2890      485       14    32768        0             0 time-compile-im
+[   2891]  1001  2891     1403      901    32768        0             0 make
+[   2892]  1001  2892     3001     2528    49152        0             0 make
+[   6898]  1001  6898      767       58    24576        0             0 bash
+[   6901]  1001  6901      866      158    28672        0             0 bash
+[   6922]  1001  6922      838       16    32768        0             0 gcc
+[   6924]  1001  6924    21950    15591   196608        0             0 cc1
+[   6994]  1001  6994      767       58    32768        0             0 bash
+[   6996]  1001  6996      866      158    28672        0             0 bash
+[   7011]  1001  7011      838       16    36864        0             0 gcc
+[   7013]  1001  7013    20940    14523   192512        0             0 cc1
+[   7020]  1001  7020      767       58    32768        0             0 bash
+[   7022]  1001  7022      866      160    28672        0             0 bash
+[   7036]  1001  7036      767       59    28672        0             0 bash
+[   7038]  1001  7038      866      158    32768        0             0 bash
+[   7050]  1001  7050      838       16    32768        0             0 gcc
+[   7052]  1001  7052    20026    14015   184320        0             0 cc1
+[   7071]  1001  7071      767       58    32768        0             0 bash
+[   7073]  1001  7073      866      158    32768        0             0 bash
+[   7081]  1001  7081      838       16    28672        0             0 gcc
+[   7082]  1001  7082    31747    25528   274432        0             0 cc1
+[   7100]  1001  7100      767       58    32768        0             0 bash
+[   7102]  1001  7102      866      158    36864        0             0 bash
+[   7117]  1001  7117      838       16    32768        0             0 gcc
+[   7118]  1001  7118    21368    15384   196608        0             0 cc1
+[   7122]  1001  7122      767       58    28672        0             0 bash
+[   7124]  1001  7124      866      159    32768        0             0 bash
+[   7154]  1001  7154      767       58    32768        0             0 bash
+[   7156]  1001  7156      866      158    28672        0             0 bash
+[   7164]  1001  7164      838       16    28672        0             0 gcc
+[   7165]  1001  7165    14457     8540   135168        0             0 cc1
+[   7167]  1001  7167      838       16    28672        0             0 gcc
+[   7168]  1001  7168    13184     6951   126976        0             0 cc1
+[   7179]  1001  7179      838       16    32768        0             0 gcc
+[   7180]  1001  7180    13206     7323   139264        0             0 cc1
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=cc1,pid=7082,uid=1001
+Out of memory: Killed process 7082 (cc1) total-vm:126988kB, anon-rss:101588kB, file-rss:524kB, shmem-rss:0kB, UID:1001 pgtables:268kB oom_score_adj:0
+oom_reaper: reaped process 7082 (cc1), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+resolvconf invoked oom-killer: gfp_mask=0xdc0(GFP_KERNEL|__GFP_ZERO), order=0, oom_score_adj=0
+CPU: 0 PID: 17942 Comm: resolvconf Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000013 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:00003400 r8:c12a36d0 r7:c0ddb15c r6:c56db300 r5:d7c1adc0
+ r4:d9011e28 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:d9011e28 r5:00000558 r4:d7c1adc0
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:d9011e28 r5:c1204fc8 r4:d7c1adc0
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:c12050cc r5:0000274b r4:00000000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03df988>] (__get_free_pages+0x24/0x3c)
+ r10:c97a1800 r9:00000000 r8:00000000 r7:c0003000 r6:c002a200 r5:d8c0f290
+ r4:c002a200
+[<c03df964>] (__get_free_pages) from [<c03df9c0>] (get_zeroed_page+0x20/0x24)
+[<c03df9a0>] (get_zeroed_page) from [<c03c5bc8>] (__pmd_alloc+0x24/0xd4)
+[<c03c5ba4>] (__pmd_alloc) from [<c0219dfc>] (pgd_alloc+0x208/0x254)
+ r7:c0003000 r6:c002a200 r5:c0e4f000 r4:d8c0f280
+[<c0219bf4>] (pgd_alloc) from [<c021dda8>] (mm_init+0xf8/0x180)
+ r10:c97a1800 r9:00000000 r8:00000000 r7:d99dbd00 r6:c120dd58 r5:00000000
+ r4:c002a200
+[<c021dcb0>] (mm_init) from [<c021ef10>] (mm_alloc+0x5c/0x68)
+ r9:01f25830 r8:ffffff9c r7:d212f000 r6:d99dbd00 r5:dab96000 r4:c002a200
+[<c021eeb4>] (mm_alloc) from [<c041579c>] (__do_execve_file+0x32c/0x84c)
+ r5:dab96000 r4:c1204fc8
+[<c0415470>] (__do_execve_file) from [<c04160b0>] (sys_execve+0x44/0x4c)
+ r10:0000000b r9:d9010000 r8:c02011c4 r7:0000000b r6:0002334c r5:01f25854
+ r4:01f25830
+[<c041606c>] (sys_execve) from [<c0201000>] (ret_fast_syscall+0x0/0x28)
+Exception stack(0xd9011fa8 to 0xd9011ff0)
+1fa0:                   01f2589c 01f25830 01f2589c 01f25830 01f25854 1ace3f00
+1fc0: 01f2589c 01f25830 0002334c 0000000b 00038568 01f25854 0002334c 00024414
+1fe0: 00035f80 beb68844 00014b90 b6ed49ac
+ r5:01f25830 r4:01f2589c
+Mem-Info:
+active_anon:87703 inactive_anon:87718 isolated_anon:0
+                active_file:927 inactive_file:972 isolated_file:32
+                unevictable:13897 dirty:2 writeback:0 unstable:0
+                slab_reclaimable:4629 slab_unreclaimable:4606
+                mapped:9948 shmem:16315 pagetables:1491 bounce:0
+                free:9590 free_pcp:0 free_cma:165
+Node 0 active_anon:350812kB inactive_anon:350872kB active_file:3708kB inactive_file:3888kB unevictable:55588kB isolated(anon):0kB isolated(file):128kB mapped:39792kB dirty:8kB writeback:0kB shmem:65260kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+DMA free:37024kB min:53248kB low:57344kB high:61440kB active_anon:272664kB inactive_anon:275772kB active_file:1528kB inactive_file:1736kB unevictable:37544kB writepending:4kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1864kB pagetables:3440kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:660kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:1336kB min:180kB low:1268kB high:2356kB active_anon:78148kB inactive_anon:75100kB active_file:2232kB inactive_file:2444kB unevictable:18044kB writepending:4kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:2524kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 508*4kB (UMEC) 885*8kB (UMEC) 1439*16kB (UMEC) 97*32kB (UE) 32*64kB (UE) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 37288kB
+HighMem: 155*4kB (UM) 26*8kB (UM) 8*16kB (UM) 2*32kB (U) 7*64kB (U) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 1468kB
+18535 total pagecache pages
+285 pages in swap cache
+Swap cache stats: add 71781, delete 71498, find 50400/64031
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8083      598   184320      169             0 systemd-journal
+[    154]     0   154     4611       12    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       17    61440      146             0 systemd-timesyn
+[    339]     0   339     1994       20    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      139    53248      108             0 rsyslogd
+[    351]     0   351      923       11    36864       42             0 alsactl
+[    352]     0   352      466        5    28672       11             0 rngd
+[    369]     0   369    16369      106    90112      437             0 udisksd
+[    372]   104   372     1691       91    40960       83          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       25    36864       49             0 avahi-daemon
+[    383]     0   383     3286       29    49152      148             0 systemd-logind
+[    405]   108   405     1443        1    32768       62             0 avahi-daemon
+[    410]     0   410      742       41    28672       64             0 dhcpcd
+[    454]     0   454     2157        0    45056       56             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      200             0 polkitd
+[    462]     0   462    10035       42    69632      172             0 lightdm
+[    465]     0   465     8627     1657    98304      216             0 vncserver-x11-c
+[    483]     0   483     2750       16    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      143         -1000 sshd
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    37820     7381   323584     3415             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     2870       81    45056       53             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       38    98304      300             0 lxsession
+[   1016]  1001  1016     1656       68    45056       65             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      171   139264     4129             0 fcitx
+[   1108]  1001  1108     1635       42    36864       53             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      182             0 gvfsd-fuse
+[   1130]  1001  1130    16292      241   106496      580             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      530   208896     1413             0 lxpanel
+[   1137]  1001  1137    24443      806   155648     1016             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       28   102400      356             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      185    81920      359             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      191    81920      267             0 vncserverui
+[   1360]  1001  1360    43018     1085   299008     2685             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      125    36864      260             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821       80    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    16748      881   102400     1203             0 php
+[  17654]  1001 17654      486       14    24576        0             0 sh
+[  17655]  1001 17655      485       14    28672        0             0 build-llvm
+[  17656]  1001 17656      793      287    32768        0             0 make
+[  17659]  1001 17659     1715     1214    40960        0             0 make
+[  17725]  1001 17725      654      166    32768        0             0 make
+[  17728]  1001 17728      486       14    32768        0             0 sh
+[  17729]  1001 17729      839       16    32768        0             0 c++
+[  17730]  1001 17730    67828    60641   565248        0             0 cc1plus
+[  17784]  1001 17784      486       14    32768        0             0 sh
+[  17785]  1001 17785      839       16    28672        0             0 c++
+[  17786]  1001 17786    61679    54977   516096        0             0 cc1plus
+[  17914]  1001 17914      561       63    28672        0             0 make
+[  17917]  1001 17917      486       14    28672        0             0 sh
+[  17918]  1001 17918      839       16    32768        0             0 c++
+[  17919]  1001 17919    34893    27487   294912        0             0 cc1plus
+[  17924]  1001 17924      486       14    28672        0             0 sh
+[  17925]  1001 17925      839       16    28672        0             0 c++
+[  17926]  1001 17926    29634    22187   249856        0             0 cc1plus
+[  17939]     0 17939      485       26    32768        0             0 dhcpcd-run-hook
+[  17940]     0 17940      485       72    28672        0             0 resolvconf
+[  17942]     0 17942      485       29    24576        0             0 resolvconf
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=cc1plus,pid=17730,uid=1001
+Out of memory: Killed process 17730 (cc1plus) total-vm:271312kB, anon-rss:241704kB, file-rss:860kB, shmem-rss:0kB, UID:1001 pgtables:552kB oom_score_adj:0
+oom_reaper: reaped process 17730 (cc1plus), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+cc1plus invoked oom-killer: gfp_mask=0x400dc2(GFP_KERNEL_ACCOUNT|__GFP_HIGHMEM|__GFP_ZERO), order=0, oom_score_adj=0
+CPU: 1 PID: 23130 Comm: cc1plus Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000113 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:00001000 r8:c12a36d0 r7:c0ddb15c r6:c35a8f00 r5:daafbd00
+ r4:c8589de8 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:c8589de8 r5:00000558 r4:daafbd00
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:c8589de8 r5:c1204fc8 r4:daafbd00
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:c12050cc r5:00001a44 r4:00000000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03c3758>] (__pte_alloc+0x34/0x168)
+ r10:d850ca40 r9:ffffe000 r8:00000055 r7:c87d5888 r6:d935fb10 r5:d850ca00
+ r4:c1204fc8
+[<c03c3724>] (__pte_alloc) from [<c03c5fe8>] (handle_mm_fault+0x370/0xde4)
+ r7:c87d5888 r6:00000040 r5:00000000 r4:c1204fc8
+[<c03c5c78>] (handle_mm_fault) from [<c0a94110>] (do_page_fault+0x150/0x380)
+ r10:d850ca40 r9:c87d5888 r8:00000a06 r7:ac401002 r6:d850ca00 r5:c6fedb80
+ r4:c8589fb0
+[<c0a93fc0>] (do_page_fault) from [<c0a94420>] (do_translation_fault+0xe0/0x10c)
+ r10:00000000 r9:ac7fc7e0 r8:00000a06 r7:ac401002 r6:c0a94340 r5:00000a06
+ r4:c120ab84
+[<c0a94340>] (do_translation_fault) from [<c0216bec>] (do_DataAbort+0x40/0xc0)
+ r9:ac7fc7e0 r8:c8589fb0 r7:ac401002 r6:c0a94340 r5:00000a06 r4:c120ab84
+[<c0216bac>] (do_DataAbort) from [<c0201d24>] (__dabt_usr+0x44/0x60)
+Exception stack(0xc8589fb0 to 0xc8589ff8)
+9fa0:                                     ac401002 00000000 0000002d ac401002
+9fc0: ac401000 00000001 bea87e24 00000000 ac7fca20 ac7fc7e0 00000000 013d76fc
+9fe0: 01312260 bea87dd0 00befd10 b6f181a0 20000010 ffffffff
+ r8:30c5387d r7:30c5383d r6:ffffffff r5:20000010 r4:b6f181a0
+Mem-Info:
+active_anon:88279 inactive_anon:91660 isolated_anon:0
+                active_file:264 inactive_file:273 isolated_file:0
+                unevictable:14171 dirty:0 writeback:0 unstable:0
+                slab_reclaimable:4464 slab_unreclaimable:4602
+                mapped:8897 shmem:16587 pagetables:1487 bounce:0
+                free:6380 free_pcp:19 free_cma:2588
+Node 0 active_anon:353116kB inactive_anon:366640kB active_file:1056kB inactive_file:1092kB unevictable:56684kB isolated(anon):0kB isolated(file):0kB mapped:35588kB dirty:0kB writeback:0kB shmem:66348kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+DMA free:24532kB min:16384kB low:20480kB high:24576kB active_anon:290732kB inactive_anon:272292kB active_file:1048kB inactive_file:1084kB unevictable:37532kB writepending:0kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1824kB pagetables:2848kB bounce:0kB free_pcp:84kB local_pcp:0kB free_cma:10352kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:988kB min:180kB low:1268kB high:2356kB active_anon:62384kB inactive_anon:94348kB active_file:204kB inactive_file:0kB unevictable:19152kB writepending:0kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:3100kB bounce:0kB free_pcp:4kB local_pcp:0kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 1167*4kB (UMEC) 826*8kB (UMEC) 314*16kB (UMEC) 178*32kB (UEC) 37*64kB (UEC) 3*128kB (UE) 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 24748kB
+HighMem: 22*4kB (UM) 15*8kB (UM) 6*16kB (UM) 8*32kB (UM) 7*64kB (U) 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 1008kB
+17444 total pagecache pages
+284 pages in swap cache
+Swap cache stats: add 71848, delete 71566, find 50405/64069
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8083      630   184320      169             0 systemd-journal
+[    154]     0   154     4611       12    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       17    61440      146             0 systemd-timesyn
+[    339]     0   339     1994       18    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      139    53248      108             0 rsyslogd
+[    351]     0   351      923       11    36864       42             0 alsactl
+[    352]     0   352      466        5    28672       11             0 rngd
+[    369]     0   369    16369      105    90112      437             0 udisksd
+[    372]   104   372     1691       91    40960       83          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       25    36864       49             0 avahi-daemon
+[    383]     0   383     3286       29    49152      148             0 systemd-logind
+[    405]   108   405     1443        1    32768       62             0 avahi-daemon
+[    410]     0   410      742       41    28672       64             0 dhcpcd
+[    454]     0   454     2157        0    45056       56             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      200             0 polkitd
+[    462]     0   462    10035       42    69632      172             0 lightdm
+[    465]     0   465     8627     1611    98304      216             0 vncserver-x11-c
+[    483]     0   483     2750       16    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      143         -1000 sshd
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    37948     7641   323584     3415             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     2870       81    45056       53             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       38    98304      300             0 lxsession
+[   1016]  1001  1016     1656       68    45056       65             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      169   139264     4129             0 fcitx
+[   1108]  1001  1108     1635       40    36864       53             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      182             0 gvfsd-fuse
+[   1130]  1001  1130    16292      241   106496      580             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      530   208896     1413             0 lxpanel
+[   1137]  1001  1137    24443      692   155648     1015             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       28   102400      356             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      185    81920      359             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      191    81920      267             0 vncserverui
+[   1360]  1001  1360    43018     1084   299008     2684             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      125    36864      260             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821       80    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    16748      879   102400     1203             0 php
+[  22755]  1001 22755      486       14    24576        0             0 sh
+[  22756]  1001 22756      485       14    28672        0             0 build-llvm
+[  22757]  1001 22757      793      285    36864        0             0 make
+[  22760]  1001 22760     1684     1211    40960        0             0 make
+[  22798]  1001 22798      719      225    28672        0             0 make
+[  23012]  1001 23012      486       14    32768        0             0 sh
+[  23013]  1001 23013      839       16    32768        0             0 c++
+[  23014]  1001 23014    73283    65969   606208        0             0 cc1plus
+[  23076]  1001 23076      561       63    28672        0             0 make
+[  23109]  1001 23109      486       14    32768        0             0 sh
+[  23110]  1001 23110      839       16    32768        0             0 c++
+[  23111]  1001 23111    40943    33521   348160        0             0 cc1plus
+[  23128]  1001 23128      486       14    32768        0             0 sh
+[  23129]  1001 23129      839       16    28672        0             0 c++
+[  23130]  1001 23130    50135    42642   417792        0             0 cc1plus
+[  23134]  1001 23134      486       14    28672        0             0 sh
+[  23135]  1001 23135      839       16    36864        0             0 c++
+[  23136]  1001 23136    33898    26791   286720        0             0 cc1plus
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=cc1plus,pid=23014,uid=1001
+Out of memory: Killed process 23014 (cc1plus) total-vm:293132kB, anon-rss:263380kB, file-rss:492kB, shmem-rss:0kB, UID:1001 pgtables:592kB oom_score_adj:0
+oom_reaper: reaped process 23014 (cc1plus), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+resolvconf invoked oom-killer: gfp_mask=0xcc0(GFP_KERNEL), order=0, oom_score_adj=0
+CPU: 3 PID: 28095 Comm: resolvconf Tainted: G         C        5.4.75-v7l-s3791004+ #1
+Hardware name: BCM2711
+Backtrace: 
+[<c020dfb0>] (dump_backtrace) from [<c020e330>] (show_stack+0x20/0x24)
+ r7:ffffffff r6:00000000 r5:60000013 r4:c12a12b0
+[<c020e310>] (show_stack) from [<c0a74814>] (dump_stack+0xd8/0x11c)
+[<c0a7473c>] (dump_stack) from [<c03913e0>] (dump_header+0x64/0x200)
+ r10:00000000 r9:00001000 r8:c12a36d0 r7:c0ddb15c r6:d864f600 r5:d99dadc0
+ r4:d856fe70 r3:4d7f70a7
+[<c039137c>] (dump_header) from [<c039079c>] (oom_kill_process+0x178/0x184)
+ r7:c0ddb15c r6:d856fe70 r5:00000558 r4:d99dadc0
+[<c0390624>] (oom_kill_process) from [<c0391230>] (out_of_memory+0x27c/0x33c)
+ r7:c12083c0 r6:d856fe70 r5:c1204fc8 r4:d99dadc0
+[<c0390fb4>] (out_of_memory) from [<c03df338>] (__alloc_pages_nodemask+0xc14/0x1240)
+ r7:00000000 r6:c12050cc r5:00004bae r4:00000000
+[<c03de724>] (__alloc_pages_nodemask) from [<c03df988>] (__get_free_pages+0x24/0x3c)
+ r10:00001000 r9:00000000 r8:be937660 r7:00001000 r6:c1204fc8 r5:da42ac68
+ r4:00000000
+[<c03df964>] (__get_free_pages) from [<c0497efc>] (proc_pid_readlink+0x88/0x170)
+[<c0497e74>] (proc_pid_readlink) from [<c04197b8>] (vfs_readlink+0x128/0x13c)
+ r8:00001000 r7:be937660 r6:d8bf2550 r5:c1204fc8 r4:da42ac68
+[<c0419690>] (vfs_readlink) from [<c0412da4>] (do_readlinkat+0x108/0x128)
+ r8:c1204fc8 r7:00000002 r6:b6fb82e4 r5:ffffff9c r4:d856ff58
+[<c0412c9c>] (do_readlinkat) from [<c04133c4>] (sys_readlink+0x28/0x2c)
+ r10:00000055 r9:d856e000 r8:c02011c4 r7:00000055 r6:00000001 r5:be937660
+ r4:b6fc6000
+[<c041339c>] (sys_readlink) from [<c0201000>] (ret_fast_syscall+0x0/0x28)
+Exception stack(0xd856ffa8 to 0xd856fff0)
+ffa0:                   b6fc6000 be937660 b6fb82e4 be937660 00001000 b6fca578
+ffc0: b6fc6000 be937660 00000001 00000055 00000000 b6fb738c b6fb739c 00000000
+ffe0: 01010101 be937660 b6fa1320 b6fac524
+Mem-Info:
+active_anon:88082 inactive_anon:76720 isolated_anon:0
+                active_file:1422 inactive_file:1259 isolated_file:30
+                unevictable:14028 dirty:0 writeback:0 unstable:0
+                slab_reclaimable:4501 slab_unreclaimable:4596
+                mapped:10486 shmem:16444 pagetables:1474 bounce:0
+                free:19397 free_pcp:0 free_cma:15385
+Node 0 active_anon:352328kB inactive_anon:306880kB active_file:5688kB inactive_file:5036kB unevictable:56112kB isolated(anon):0kB isolated(file):120kB mapped:41944kB dirty:0kB writeback:0kB shmem:65776kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+DMA free:76308kB min:16384kB low:20480kB high:24576kB active_anon:244940kB inactive_anon:267504kB active_file:488kB inactive_file:572kB unevictable:37532kB writepending:0kB present:786432kB managed:691372kB mlocked:32kB kernel_stack:1832kB pagetables:2756kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:61540kB
+lowmem_reserve[]: 0 0 180 180
+HighMem free:1280kB min:180kB low:1268kB high:2356kB active_anon:107388kB inactive_anon:39376kB active_file:5384kB inactive_file:4644kB unevictable:18580kB writepending:0kB present:184320kB managed:184320kB mlocked:0kB kernel_stack:0kB pagetables:3140kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+lowmem_reserve[]: 0 0 0 0
+DMA: 852*4kB (UMEC) 706*8kB (UMEC) 383*16kB (UMEC) 296*32kB (UEC) 533*64kB (UEC) 118*128kB (UEC) 6*256kB (C) 3*512kB (C) 0*1024kB 0*2048kB 0*4096kB = 76944kB
+HighMem: 6*4kB (UM) 58*8kB (UM) 12*16kB (UM) 19*32kB (UM) 0*64kB 0*128kB 0*256kB 0*512kB 0*1024kB 0*2048kB 0*4096kB = 1288kB
+19463 total pagecache pages
+312 pages in swap cache
+Swap cache stats: add 71914, delete 71604, find 50409/64106
+Free swap  = 0kB
+Total swap = 102396kB
+242688 pages RAM
+46080 pages HighMem/MovableOnly
+23765 pages reserved
+65536 pages cma reserved
+Tasks state (memory values in pages):
+[  pid  ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[    123]     0   123     8083      663   184320      169             0 systemd-journal
+[    154]     0   154     4611       12    49152      219         -1000 systemd-udevd
+[    304]   100   304     5603       17    61440      146             0 systemd-timesyn
+[    339]     0   339     1994       18    45056       35             0 cron
+[    340] 65534   340     1080        5    32768       39             0 thd
+[    345]     0   345     6378      139    53248      108             0 rsyslogd
+[    351]     0   351      923       11    36864       42             0 alsactl
+[    352]     0   352      466        5    28672       11             0 rngd
+[    369]     0   369    16369      105    90112      437             0 udisksd
+[    372]   104   372     1691       91    40960       83          -900 dbus-daemon
+[    381]     0   381     2685       12    49152       89             0 wpa_supplicant
+[    382]   108   382     1443       25    36864       49             0 avahi-daemon
+[    383]     0   383     3286       29    49152      148             0 systemd-logind
+[    405]   108   405     1443        1    32768       62             0 avahi-daemon
+[    410]     0   410      742       41    28672       64             0 dhcpcd
+[    454]     0   454     2157        0    45056       56             0 vncserver-x11-s
+[    461]     0   461    10116        0    65536      200             0 polkitd
+[    462]     0   462    10035       42    69632      172             0 lightdm
+[    465]     0   465     8627     1818    98304      216             0 vncserver-x11-c
+[    483]     0   483     2750      118    45056      120             0 wpa_supplicant
+[    484]     0   484     2681        0    40960      143         -1000 sshd
+[    505]     0   505     1405        2    40960      111             0 login
+[    533]  1000   533     3679        1    53248      245             0 systemd
+[    534]  1000   534     4206        1    53248      413             0 (sd-pam)
+[    573]     0   573    37820     7769   323584     3415             0 Xorg
+[    590]  1000   590     2123        2    36864      219             0 bash
+[    609]     0   609     2870       81    45056       53             0 vncagent
+[    641]     0   641      535        1    28672       31             0 hciattach
+[    651]     0   651     2452        2    45056       99             0 bluetoothd
+[    653]     0   653     6677        0    49152      110             0 bluealsa
+[    707]     0   707     8116        6    69632      186             0 lightdm
+[    959]  1001   959     3699        1    49152      267             0 systemd
+[    964]  1001   964     8816        2    65536      440             0 (sd-pam)
+[   1007]  1001  1007    14163       38    98304      300             0 lxsession
+[   1016]  1001  1016     1656       68    45056       65             0 dbus-daemon
+[   1070]  1001  1070     1130       10    32768       63             0 ssh-agent
+[   1098]  1001  1098    20590      169   139264     4129             0 fcitx
+[   1108]  1001  1108     1635       40    36864       53             0 dbus-daemon
+[   1114]  1001  1114     1155        1    32768       43             0 fcitx-dbus-watc
+[   1115]  1001  1115    10899        1    73728      173             0 gvfsd
+[   1120]  1001  1120    14193        0    81920      182             0 gvfsd-fuse
+[   1130]  1001  1130    16292      241   106496      580             0 openbox
+[   1132]  1001  1132    11873        1    90112      279             0 lxpolkit
+[   1135]  1001  1135    41051      530   208896     1413             0 lxpanel
+[   1137]  1001  1137    24443      725   155648     1015             0 pcmanfm
+[   1142]  1001  1142     1130        1    32768       71             0 ssh-agent
+[   1144]  1001  1144      485        0    32768       16             0 cmstart.sh
+[   1154]  1001  1154     1218        0    36864       67             0 xcompmgr
+[   1177]  1001  1177    22224       28   102400      356             0 gvfs-udisks2-vo
+[   1183]  1001  1183    10072        0    77824      123             0 gvfs-goa-volume
+[   1185]  1001  1185     7176        1    57344      150             0 menu-cached
+[   1192]  1001  1192    10462        1    69632      161             0 gvfs-gphoto2-vo
+[   1196]  1001  1196    10070        0    73728      136             0 gvfs-mtp-volume
+[   1200]  1001  1200    14053        0    94208      202             0 gvfs-afc-volume
+[   1207]  1001  1207     8011      185    81920      359             0 vncserverui
+[   1215]  1001  1215    13827       20    86016      203             0 gvfsd-trash
+[   1221]  1001  1221     8005      191    81920      267             0 vncserverui
+[   1360]  1001  1360    43018     1084   299008     2684             0 lxterminal
+[   1366]  1001  1366     2166      143    36864      144             0 bash
+[   1383]  1001  1383     2272      125    36864      260             0 bash
+[   1763]  1001  1763     6499       61    57344       49             0 dconf-service
+[  11166]  1001 11166     7821       81    65536       50             0 gvfsd-metadata
+[  32707]  1001 32707      485        0    32768       20             0 phoronix-test-s
+[  32709]  1001 32709    16748      879   102400     1203             0 php
+[  27975]  1001 27975      486       14    32768        0             0 sh
+[  27976]  1001 27976      485       14    32768        0             0 build-llvm
+[  27977]  1001 27977      793      285    36864        0             0 make
+[  27980]  1001 27980     1684     1187    40960        0             0 make
+[  27998]  1001 27998      553       50    28672        0             0 make
+[  28017]  1001 28017      654      166    32768        0             0 make
+[  28030]  1001 28030      486       14    24576        0             0 sh
+[  28031]  1001 28031      839       16    32768        0             0 c++
+[  28032]  1001 28032    66632    59903   557056        0             0 cc1plus
+[  28036]  1001 28036      486       14    28672        0             0 sh
+[  28037]  1001 28037      839       16    32768        0             0 c++
+[  28038]  1001 28038    65396    58802   544768        0             0 cc1plus
+[  28085]  1001 28085      486       14    32768        0             0 sh
+[  28086]  1001 28086      839       16    32768        0             0 c++
+[  28087]  1001 28087    31514    24848   270336        0             0 cc1plus
+[  28091]  1001 28091      486       14    32768        0             0 sh
+[  28092]  1001 28092      839       16    36864        0             0 c++
+[  28093]  1001 28093    19178    13236   180224        0             0 cc1plus
+[  28094]     0 28094      485      108    32768        0             0 dhcpcd-run-hook
+[  28095]     0 28095       98        1    24576        0             0 resolvconf
+oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/,task=cc1plus,pid=28032,uid=1001
+Out of memory: Killed process 28032 (cc1plus) total-vm:266528kB, anon-rss:235812kB, file-rss:3800kB, shmem-rss:0kB, UID:1001 pgtables:544kB oom_score_adj:0
+oom_reaper: reaped process 28032 (cc1plus), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
