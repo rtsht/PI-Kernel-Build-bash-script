@@ -18,4 +18,4 @@ Andrew Waltos. Student at RMIT, student number s3791004.
 + Introduction to if <https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html>
 + Linux find process by name - nixCraft <https://www.cyberciti.biz/faq/linux-find-process-name/>
 + bc command in Linux with examples - GeeksforGeeks <https://www.geeksforgeeks.org/bc-command-linux-examples/>
-
++ SC2016 False positive for variables to full binary path · Issue #970 · koalaman/shellcheck <https://github.com/koalaman/shellcheck/issues/970>

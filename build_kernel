@@ -13,6 +13,8 @@ APT=/usr/bin/apt
 MAKE=/usr/bin/make
 YES=/usr/bin/yes
 SHUTDOWN=/sbin/shutdown
+KILL=/bin/kill
+PIDOF=/bin/pidof
 
 # variables set for files
 KERNEL=kernel7l
@@ -43,6 +45,9 @@ $COPY ../usap-a2-kernel/.config .config
 
 # Compile the kernel based on the config file
 $YES | $MAKE -j4 zImage modules dtbs
+
+# Send USR2 signal to performance_script
+$KILL -12 "$($PIDOF -x performance_script)"
 
 # Back up the existing kernel and libs
 $SUDO mkdir -p /boot/bkup/overlays

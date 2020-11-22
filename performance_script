@@ -1,5 +1,4 @@
 #!/bin/bash
-#shellcheck disable=SC2016
 
 # Trap to catch a USR2 signal and commence exit procedure
 trap clean_exit SIGUSR2
@@ -18,8 +17,13 @@ clean_exit() {
 run=false
 }
 
+# Work around to the shellcheck 2016 error bug
+awk() {
+"$AWK" "$1";
+}
+
 # Function to get cpu load per second
-time_on() {
+set_times() {
   if (( $(echo "$1 < 20" | bc -l) )) ; then
     ON=0.2
     OFF=0.8
@@ -51,7 +55,7 @@ echo none >${LED}trigger
 # Main loop to blink per cpu load
 run=true
 while $run ; do
-	time_on "$($TOP -n 1 -b | $AWK '/Cpu/ { print 100 - $8 }')"
+	set_times "$($TOP -n 1 -b | awk '/Cpu/ { print 100 - $8 }')"
 	echo 1 >${LED}brightness
 	sleep $ON
 	echo 0 >${LED}brightness
