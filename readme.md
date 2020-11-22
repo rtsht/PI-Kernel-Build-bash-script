@@ -29,9 +29,10 @@ This file - a description of the project.
 A written report about the performance of the Pi4 in various benchmarking tests for System, Processor and Memory operations.
 
 [phoronix-test-results](phoronix-test-results/)
+Folder containing results of the tests carried out.
 
-[git_log](/git_log)  
-An exported log of Git commits over the development of this project
+[gitlog](/gitlog)  
+An exported log of Git commits over the development of this project.
 
 ### Resources used:
 All code and docs written on a Raspberry Pi 4 using bash and markdown. Utilities used: [git](https://www.git-scm.com) and [GitHub](https://www.github.com), [shellcheck](https://www.shellcheck.net/), [Linux Kernel](https"//kernel.org), [xconfig](https://en.wikipedia.org/wiki/Xconfig) and various built-ins and packages bundled with [Raspberry Pi OS](https://www.raspberrypi.org/software/).
