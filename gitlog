@@ -1,0 +1,191 @@
+commit f9a1190b6716ecc33f8ff63c6eece529b4879c72
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 14:53:36 2020 +1100
+
+    final v2.0
+
+commit 5943b6427f10f1418962de15765ef46699a4e3c2
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 14:50:58 2020 +1100
+
+    final hopefully
+
+commit 92bedfee5d2f4585108f9483f2095d2953749887
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 14:38:00 2020 +1100
+
+    more report writing
+
+commit c0490e2a5b18e4ed40de8b14166bb810956da3d8
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 13:53:55 2020 +1100
+
+    report memory
+
+commit 5e4c8ebbb8c4a5566db0f98ed78cf6f5039763e5
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 13:28:29 2020 +1100
+
+    more report writing
+
+commit e3d53ef69242d3b64170d13dfcb28b7454a3a609
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 12:30:31 2020 +1100
+
+    report image test2
+
+commit 28795d80306a5511e10c55746dba66f961fcc01d
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 12:27:33 2020 +1100
+
+    report image test
+
+commit 6ae8b3e55bcc907b02b0fe6d33f63effe1b5f51a
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 11:40:21 2020 +1100
+
+    fixed link in report
+
+commit da21d1a80f576f630fbeab89093adb5e09561cfe
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 11:38:33 2020 +1100
+
+    report - Intro and Method
+
+commit 700acfa544ef98f6015520980d11af4ade911283
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 11:00:49 2020 +1100
+
+    Added the report.md framework
+
+commit 4fdfabe4cb601e059c0fbcf1a5e393bd2e5affbb
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sun Nov 22 10:52:40 2020 +1100
+
+    Added phoronix test results
+
+commit 33bb85329c70c9f0b050feea9168d6fdd182408b
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sat Nov 21 08:51:56 2020 +1100
+
+    add perf script readme
+
+commit b5b348491f1719538c430459becfd65d22fdf3ef
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sat Nov 21 08:20:46 2020 +1100
+
+    stop tracking the swap file
+
+commit de936aee3f0c4ce5ab4acce27ee77a86b2229c4c
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sat Nov 21 08:17:16 2020 +1100
+
+    add git ignore for swap files
+
+commit c74eca319d6bb6d3b915fcedb1a832d2777f6c94
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Sat Nov 21 08:12:25 2020 +1100
+
+    build script readme added
+
+commit 8c10b681f5d09055d555fc1f242b7bdf585dcdf4
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Fri Nov 20 22:29:41 2020 +1100
+
+    additional readme info3
+
+commit 945aa41f12b74b97c6aefc3922a7c667b528bd89
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Fri Nov 20 22:27:58 2020 +1100
+
+    additional readme info2
+
+commit fdfad66f557180bcdc29a775e4d2a6be57c21fbe
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Fri Nov 20 22:24:40 2020 +1100
+
+    additional readme info
+
+commit f487e3de98cb8b3f6d05914efc9d54bdbb0bdb71
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Fri Nov 20 22:07:12 2020 +1100
+
+    added readme
+
+commit 13f12ed399522ebfc44ae90a8e3f712eea0aa7c4
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Fri Nov 20 19:58:52 2020 +1100
+
+    perf script save and restore led trigger
+
+commit 7af787a39ab3d7bc85d7f0c7fe75a00ff2c3f62f
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Wed Nov 18 21:54:33 2020 +1100
+
+    perf scrpt - exit on signal done
+
+commit 5befd169e47c49a1f18791a84034d88c5cce3f07
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Wed Nov 18 19:33:55 2020 +1100
+
+    perf script work - loop done
+
+commit a9356e2a27353dfa8014e22214d044984b2bcbe8
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Wed Nov 18 09:52:29 2020 +1100
+
+    More perf script work - need to solve SC quoting error
+
+commit 642da020fa2d653d3510a4efa598273efe94b824
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Wed Nov 18 08:37:36 2020 +1100
+
+    perf script added and started
+
+commit 1725d0187da58f11473c5113c8bd0e6a8a4f32cb
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Wed Nov 18 07:24:32 2020 +1100
+
+    Successful kernel build!
+
+commit 76ba10c75037763343e6d9af4be5faed13e511fa
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Tue Nov 17 21:33:02 2020 +1100
+
+    Fixed paths for .config files
+
+commit 1008d3b47020118903d6260a76acac132afcd9c3
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Tue Nov 17 20:15:12 2020 +1100
+
+    added backup lines to build script
+
+commit 4ed797ea5e2e08e770711c7b04ee945ac3019e82
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Tue Nov 17 19:44:06 2020 +1100
+
+    re-order the script - copy config fix
+
+commit 315edbe4346619a7d3f529b3b5dd4080d1b41981
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Tue Nov 17 18:27:40 2020 +1100
+
+    Test build script
+
+commit f731434050727a5f44a4b0f62d981bd6c2fe0dfe
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Mon Nov 16 22:48:45 2020 +1100
+
+    Added fail function
+
+commit 9ff565d0bca9fbac00ecfde1fab31d1d599129a8
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Mon Nov 16 22:04:14 2020 +1100
+
+    built up the build_kernel script
+
+commit 5e2575c5333e9c181ab03665b3637cbc44737e59
+Author: Andrew Waltos <s3791004@student.rmit.edu.au>
+Date:   Mon Nov 16 19:52:23 2020 +1100
+
+    Initial commit. Add config file
