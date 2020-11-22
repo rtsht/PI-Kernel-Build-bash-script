@@ -24,7 +24,9 @@ One of the tests in the suite is a Timed Linux Kernel Compilation. This tests th
 
 ### Memory
 [Results on OpenBenchmarking](https://openbenchmarking.org/result/2011212-KH-MEMORYS3796)  
-Memory was an interesting suite to carry out as there are a few variants of the Pi4 which offer different amounts of built-in RAM.
+Memory was an interesting suite to carry out as there are a few variants of the Pi4 which offer different amounts of built-in RAM.  
+In the below image, results from this Pi \(1GB RAM\) is on the left and another Pi \(8GB RAM\) is on the right. The 8GB results can be verified on OpenBenchmarking at (https://openbenchmarking.org/result/2011215-KH-MATHEWCRA18)
+![Memory Comparison](phoronix-test-results/memory-s3791004/memory-compare.png "Memory Comparison")
 
 ### Python
 [Results on OpenBenchmarking](https://openbenchmarking.org/result/2011210-KH-PYTHONS3714)  
