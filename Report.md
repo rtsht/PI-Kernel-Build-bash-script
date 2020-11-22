@@ -27,13 +27,17 @@ One of the tests in the suite is a Timed Linux Kernel Compilation. This tests th
 Memory was an interesting suite to carry out as there are a few variants of the Pi4 which offer different amounts of built-in RAM.  
 In the below image, results from this Pi \(1GB RAM\) is on the left and another Pi \(8GB RAM\) is on the right. The 8GB results can be verified on OpenBenchmarking at (https://openbenchmarking.org/result/2011215-KH-MATHEWCRA18)
 ![Memory Comparison](phoronix-test-results/memory-s3791004/memory-compare.png "Memory Comparison")
+In all of these tests, more-is-better except for "t-test1: 1" and "t-test1:2".
 
 ### Python
 [Results on OpenBenchmarking](https://openbenchmarking.org/result/2011210-KH-PYTHONS3714)  
-
-
+The Python test suite measures a system's performance in carrying out various functions and operations in the Python programming language. In the PyBench test, such operations are carried out and timed. Here, the Pi placed in the 13th percentile on OpenBenchmarking based on over 5,700 samples.
+![PyBench Test](phoronix-test-results/python-s3791004/1.svg "PyBench Test")
 
 ## Analysis
-Overall, the Pi performed as expected being a small, cheap single board computer. When compared to other systems online it performs in the low tier. Although it does perform quite well compared to systems that would have been considered high-end some years ago. In some tests, the Pi performed as well as 3rd Gen Intel processors - Even though these are now around 7 years old, it is impressive how far the Pi has come to achieve these results in its development and considering its size and cost.
+Overall, the Pi performed as expected being a small, cheap single board computer. When compared to other systems online it performs in the low tier. Although it does perform quite well compared to systems that would have been considered high-end some years ago. In some tests, the Pi performed as well as 3rd Gen Intel processors - Even though these are now around 7 years old, it is impressive how far the Pi has come to achieve these results in its development and considering its size and cost.  
+The memory test suite proved interesting when compared to a Pi 8GB model. As in the comparison table above, the 8GB model outperformed this \(1GB\) model in every individual test except for the read and write cachebench tests which look at the bandwidth of the on-board memory and cache.
 
 ## Conclusions
+Overall, the Pi is not a particularly fast system and it has its limitations in processing speed and power due to it's small footprint which houses basic computer components. A passivecooling system should be added to avoid the CPU throttling and lowering performance.  
+Aside from these constraints, the Pi is capable of carrying out most tasks and performs surprisingly well.
