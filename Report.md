@@ -32,7 +32,7 @@ In all of these tests, more-is-better except for "t-test1: 1" and "t-test1:2".
 ### Python
 [Results on OpenBenchmarking](https://openbenchmarking.org/result/2011210-KH-PYTHONS3714)  
 The Python test suite measures a system's performance in carrying out various functions and operations in the Python programming language. In the PyBench test, such operations are carried out and timed. Here, the Pi placed in the 13th percentile on OpenBenchmarking based on over 5,700 samples.
-![PyBench Test](phoronix-test-results/python-s3791004/1.svg "PyBench Test")
+![PyBench Test](phoronix-test-results/python-s3791004/results-graphs/2.svg "PyBench Test")
 
 ## Analysis
 Overall, the Pi performed as expected being a small, cheap single board computer. When compared to other systems online it performs in the low tier. Although it does perform quite well compared to systems that would have been considered high-end some years ago. In some tests, the Pi performed as well as 3rd Gen Intel processors - Even though these are now around 7 years old, it is impressive how far the Pi has come to achieve these results in its development and considering its size and cost.  
@@ -40,4 +40,5 @@ The memory test suite proved interesting when compared to a Pi 8GB model. As in 
 
 ## Conclusions
 Overall, the Pi is not a particularly fast system and it has its limitations in processing speed and power due to it's small footprint which houses basic computer components. A passivecooling system should be added to avoid the CPU throttling and lowering performance.  
+A Pi with more RAM does produce better results, so for the extra cost of a 4 or 8 GB model, the performance gain makes it worthwile.
 Aside from these constraints, the Pi is capable of carrying out most tasks and performs surprisingly well.
