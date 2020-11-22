@@ -5,7 +5,8 @@ performance_script
 **performance_script**
 
 #### DESCRIPTION
-This is a script designed to automate the fetching, building and installation of a linux kernel for a raspberry pi 4. It is intended for the Raspberry Pi OS. The script will clone the repo that has the config file, then clone the kernel and build the kernel and modules based on that config. The config is based on bcm2711 with with two changes: removal of camera and v4l support and appending my student number s3791004 to the version. The build_kernel script is open-source under GNU GPLv3.
+This script is designed to blink the green on-board led for the Raspberry Pi in relation to the cpu load. For under 20% load, it blinks 1/5th of a second. For 20-39% load, it blinks for 2/5th of a second. And so-on until it blinks for a full second at over 80% load. The script makes some changes to system file permissions but before doing so it saves their state and restores as long as the script is exited gracefully on receipt of a USR2 signal.  
+The performance_script script is open-source under GNU GPLv3.
 
 #### AUTHORS
 Andrew Waltos. Student at RMIT, student number s3791004.
