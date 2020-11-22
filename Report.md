@@ -9,7 +9,7 @@ The 4 tests mentioned above were selected because they stress test different com
 ## Results
 ### Compression
 The 7-Zip compression test in this suite returned a score of 3458 MIPS \(Million Instructions Per Second\).  
-![7-Zip Test](/compression-s3791004/result-graphs/1.svg "7-Zip Test Result")  
+![7-Zip Test](phoronix-test-results/compression-s3791004/result-graphs/1.svg "7-Zip Test Result")  
 this blah
 
 ## Analysis
