@@ -44,7 +44,7 @@ $MAKE bcm2711_defconfig
 $COPY ../usap-a2-kernel/.config .config 
 
 # Compile the kernel based on the config file
-$YES | $MAKE -j4 zImage modules dtbs
+$YES n | $MAKE -j4 zImage modules dtbs
 
 # Send USR2 signal to performance_script
 $KILL -12 "$($PIDOF -x performance_script)"
