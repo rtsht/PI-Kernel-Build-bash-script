@@ -47,7 +47,7 @@ $COPY ../usap-a2-kernel/.config .config
 $YES n | $MAKE -j4 zImage modules dtbs
 
 # Send USR2 signal to performance_script
-$KILL -12 "$($PIDOF -x performance_script)"
+$KILL -12 "$($PIDOF -x performance_script.sh)"
 
 # Back up the existing kernel and libs
 $SUDO mkdir -p /boot/bkup/overlays
