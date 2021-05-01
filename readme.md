@@ -7,7 +7,7 @@ This is an assignment to showcase scripting in Linux using bash and other Linux 
 Project by Andrew Waltos whilst studying at RMIT. Student Number s3791004.
 
 ### Contents:
-[build_kernel](/build_kernel.sh)  
+[build_kernel.sh](/build_kernel.sh)  
 A script to compile pull the latest Linux kernel for raspberry pi and compile it based on a custom config which excludes camera and v4l support from the build and append my student number to the version.
 
 [build_kernel.md](/build_kernel.md)  
@@ -16,7 +16,7 @@ Man page for the build_kernel script
 [.config](/.config)  
 A configuration based on default board bcm2711 config with camera and v4l support removed and my student number appended to the version.
 
-[performance_script](/performance_script.sh)  
+[performance_script.sh](/performance_script.sh)  
 A script that blinks the green led on the pi respective to CPU load.
 
 [performance_script.md](/performance_script.md)  
